@@ -109,7 +109,7 @@ class _GreenBikeWidgetState extends State<GreenBikeWidget>
                 children: [
                   Text(
                     'Launching a Brand',
-                    style: FlutterFlowTheme.of(context).subtitle1,
+                    style: FlutterFlowTheme.of(context).titleMedium,
                   ),
                 ],
               ),

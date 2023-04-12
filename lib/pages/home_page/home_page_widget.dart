@@ -3,6 +3,7 @@ import '/components/portfolio_view1_widget.dart';
 import '/components/view_project_item_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -168,12 +169,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
 
-    return Scaffold(
-      key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        body: SafeArea(
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -275,7 +276,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'Hi, I\'m Edgar',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .title1,
+                                                                  .displaySmall,
                                                             ),
                                                           ),
                                                           SizedBox(
@@ -305,7 +306,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         ' A passionate Designer, Maker and Builder with an interest in pushing the quality of not just digital design, but physical products and spaces as well. ',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -322,7 +323,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         ' I try to use my technical academic background, experience within startups and non governmental organizations, creativity, and my passion for technology and Life-long Learning to create products that delight.',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -335,7 +336,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 ],
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1
+                                                                    .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -407,7 +408,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'What I Do',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .title1,
+                                                                  .displaySmall,
                                                             ),
                                                           ),
                                                           SizedBox(
@@ -437,7 +438,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         'I am Interested in ',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -460,7 +461,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         ' and ',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -479,7 +480,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         ' and ',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -498,7 +499,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         'I am Ambitious and Excited by the combination of Technology and Great Design in Inspiring and Delighting others.',
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -509,7 +510,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 ],
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1
+                                                                    .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -560,7 +561,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .tertiaryColor,
+                                                                        .tertiary,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             0.0),
@@ -581,7 +582,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           TextSpan(
                                                                             text:
                                                                                 'UX DESIGN',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                   fontWeight: FontWeight.normal,
@@ -589,7 +590,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -599,7 +600,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .tertiaryColor,
+                                                                        .tertiary,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             0.0),
@@ -620,7 +621,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           TextSpan(
                                                                             text:
                                                                                 'CROSS-PLATFORM MOBILE APPLICATIONS',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                   fontWeight: FontWeight.normal,
@@ -628,7 +629,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -638,7 +639,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .tertiaryColor,
+                                                                        .tertiary,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             0.0),
@@ -659,7 +660,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           TextSpan(
                                                                             text:
                                                                                 'DIGITAL AND INTERACTIVE DESIGN',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                   fontWeight: FontWeight.normal,
@@ -667,7 +668,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -677,7 +678,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .tertiaryColor,
+                                                                        .tertiary,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             0.0),
@@ -698,7 +699,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           TextSpan(
                                                                             text:
                                                                                 'PRODUCT MANAGEMENT',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                   fontWeight: FontWeight.normal,
@@ -706,7 +707,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -716,7 +717,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .tertiaryColor,
+                                                                        .tertiary,
                                                                     borderRadius:
                                                                         BorderRadius.circular(
                                                                             0.0),
@@ -737,7 +738,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           TextSpan(
                                                                             text:
                                                                                 'PROJECT MANAGEMENT',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                   fontWeight: FontWeight.normal,
@@ -745,7 +746,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -819,12 +820,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         .primaryBackground,
                                                                     textStyle: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .subtitle2
+                                                                        .titleSmall
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              FlutterFlowTheme.of(context).tertiary,
                                                                         ),
                                                                     elevation:
                                                                         1.0,
@@ -832,7 +833,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         BorderSide(
                                                                       color: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .tertiaryColor,
+                                                                          .tertiary,
                                                                       width:
                                                                           1.0,
                                                                     ),
@@ -883,19 +884,19 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           .primaryBackground,
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .subtitle2
+                                                                          .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                FlutterFlowTheme.of(context).tertiary,
                                                                           ),
                                                                       elevation:
                                                                           1.0,
                                                                       borderSide:
                                                                           BorderSide(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         width:
                                                                             1.0,
                                                                       ),
@@ -952,7 +953,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       style:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .title1,
+                                                              .displaySmall,
                                                     ),
                                                     Container(
                                                       width:
@@ -997,7 +998,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 .center,
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText2,
+                                                                .bodySmall,
                                                           ),
                                                           SizedBox(
                                                             height: 20.0,
@@ -1008,14 +1009,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               endIndent: 2.0,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .tertiaryColor,
+                                                                  .tertiary,
                                                             ),
                                                           ),
                                                           Text(
                                                             '778 889 8646',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText2,
+                                                                .bodySmall,
                                                           ),
                                                           SizedBox(
                                                             height: 20.0,
@@ -1026,14 +1027,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               endIndent: 2.0,
                                                               color: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .tertiaryColor,
+                                                                  .tertiary,
                                                             ),
                                                           ),
                                                           Text(
                                                             'Edgar.Ondati@gmail.com',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText2,
+                                                                .bodySmall,
                                                           ),
                                                         ],
                                                       ),
@@ -1125,7 +1126,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             Text(
                                                                           'HIGHLIGHTS OF QUALIFICATIONS',
                                                                           style:
-                                                                              FlutterFlowTheme.of(context).title2,
+                                                                              FlutterFlowTheme.of(context).headlineMedium,
                                                                         ),
                                                                       ),
                                                                       SizedBox(
@@ -1167,7 +1168,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 children: [
                                                                                   Icon(
                                                                                     Icons.album,
-                                                                                    color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                    color: FlutterFlowTheme.of(context).tertiary,
                                                                                     size: 11.0,
                                                                                   ),
                                                                                   Expanded(
@@ -1184,20 +1185,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 children: [
                                                                                                   TextSpan(
                                                                                                     text: 'BACHELORS DEGREE IN COMPUTER SCIENCE ',
-                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 14.0,
                                                                                                         ),
                                                                                                   ),
                                                                                                   TextSpan(
                                                                                                     text: 'With experience in multi- disciplinary environments including Web, UX, 3D, Interior, and Product design.',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 12.0,
                                                                                                         ),
                                                                                                   )
                                                                                                 ],
-                                                                                                style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                       fontFamily: 'Outfit',
                                                                                                       fontSize: 14.0,
                                                                                                     ),
@@ -1218,7 +1219,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 children: [
                                                                                   Icon(
                                                                                     Icons.album,
-                                                                                    color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                    color: FlutterFlowTheme.of(context).tertiary,
                                                                                     size: 11.0,
                                                                                   ),
                                                                                   Expanded(
@@ -1235,20 +1236,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 children: [
                                                                                                   TextSpan(
                                                                                                     text: 'PRODUCT MANAGEMENT ',
-                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 14.0,
                                                                                                         ),
                                                                                                   ),
                                                                                                   TextSpan(
                                                                                                     text: 'designing, planning, sourcing and managing project execution in different sectors including Construction, Automotive, Events, among others.',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 12.0,
                                                                                                         ),
                                                                                                   )
                                                                                                 ],
-                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                               ),
                                                                                             ),
                                                                                           ),
@@ -1266,7 +1267,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 children: [
                                                                                   Icon(
                                                                                     Icons.album,
-                                                                                    color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                    color: FlutterFlowTheme.of(context).tertiary,
                                                                                     size: 11.0,
                                                                                   ),
                                                                                   Expanded(
@@ -1283,20 +1284,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 children: [
                                                                                                   TextSpan(
                                                                                                     text: 'PRODUCT DESIGN ',
-                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 14.0,
                                                                                                         ),
                                                                                                   ),
                                                                                                   TextSpan(
                                                                                                     text: 'User Centric Design, understanding client needs and working with local and Global suppliers to deliver the best quality within their budget and requirements.',
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 12.0,
                                                                                                         ),
                                                                                                   )
                                                                                                 ],
-                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                               ),
                                                                                             ),
                                                                                           ),
@@ -1370,7 +1371,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             Text(
                                                                           'SKILLS',
                                                                           style:
-                                                                              FlutterFlowTheme.of(context).title2,
+                                                                              FlutterFlowTheme.of(context).headlineMedium,
                                                                         ),
                                                                       ),
                                                                       SizedBox(
@@ -1430,7 +1431,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                       radius: MediaQuery.of(context).size.width * 0.033,
                                                                                       lineWidth: 12.0,
                                                                                       animation: true,
-                                                                                      progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                      progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                       backgroundColor: Color(0xFFE0E3E7),
                                                                                     ),
                                                                                   ),
@@ -1445,7 +1446,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           AutoSizeText(
                                                                                             'Project\nManagement',
                                                                                             textAlign: TextAlign.center,
-                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
                                                                                                   lineHeight: 0.9,
                                                                                                 ),
@@ -1466,7 +1467,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                       radius: MediaQuery.of(context).size.width * 0.033,
                                                                                       lineWidth: 12.0,
                                                                                       animation: true,
-                                                                                      progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                      progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                       backgroundColor: Color(0xFFE0E3E7),
                                                                                     ),
                                                                                   ),
@@ -1481,7 +1482,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           AutoSizeText(
                                                                                             'Illustrator',
                                                                                             textAlign: TextAlign.center,
-                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
                                                                                                   lineHeight: 0.9,
                                                                                                 ),
@@ -1502,7 +1503,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                       radius: MediaQuery.of(context).size.width * 0.033,
                                                                                       lineWidth: 12.0,
                                                                                       animation: true,
-                                                                                      progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                      progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                       backgroundColor: Color(0xFFE0E3E7),
                                                                                     ),
                                                                                   ),
@@ -1517,7 +1518,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           AutoSizeText(
                                                                                             'Sketchup',
                                                                                             textAlign: TextAlign.center,
-                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
                                                                                                   lineHeight: 0.9,
                                                                                                 ),
@@ -1538,7 +1539,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                       radius: MediaQuery.of(context).size.width * 0.033,
                                                                                       lineWidth: 12.0,
                                                                                       animation: true,
-                                                                                      progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                      progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                       backgroundColor: Color(0xFFE0E3E7),
                                                                                     ),
                                                                                   ),
@@ -1553,7 +1554,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           AutoSizeText(
                                                                                             'Flutter / Dart',
                                                                                             textAlign: TextAlign.center,
-                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
                                                                                                   lineHeight: 0.9,
                                                                                                 ),
@@ -1574,7 +1575,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                       radius: MediaQuery.of(context).size.width * 0.033,
                                                                                       lineWidth: 12.0,
                                                                                       animation: true,
-                                                                                      progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                      progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                       backgroundColor: Color(0xFFE0E3E7),
                                                                                     ),
                                                                                   ),
@@ -1589,7 +1590,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           AutoSizeText(
                                                                                             'Lumion',
                                                                                             textAlign: TextAlign.center,
-                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
                                                                                                   lineHeight: 0.9,
                                                                                                 ),
@@ -1664,7 +1665,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             Text(
                                                                           'EDUCATION',
                                                                           style:
-                                                                              FlutterFlowTheme.of(context).title2,
+                                                                              FlutterFlowTheme.of(context).headlineMedium,
                                                                         ),
                                                                       ),
                                                                       SizedBox(
@@ -1716,14 +1717,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 TextSpan(
                                                                                                   text: 'BACHELORS DEGREE ',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         fontSize: 14.0,
                                                                                                       ),
                                                                                                 ),
                                                                                                 TextSpan(
                                                                                                   text: 'SEPTEMBER 2009 - MAY 2013 ',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         fontSize: 14.0,
                                                                                                         fontWeight: FontWeight.normal,
@@ -1731,13 +1732,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 ),
                                                                                                 TextSpan(
                                                                                                   text: 'University of Nairobi: BSc. Computer Science',
-                                                                                                  style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         fontSize: 12.0,
                                                                                                       ),
                                                                                                 )
                                                                                               ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                             ),
                                                                                           ),
                                                                                         ],
@@ -1763,7 +1764,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                                                                                             child: Container(
                                                                                               decoration: BoxDecoration(
-                                                                                                color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                color: FlutterFlowTheme.of(context).tertiary,
                                                                                                 borderRadius: BorderRadius.circular(0.0),
                                                                                               ),
                                                                                               child: Padding(
@@ -1773,14 +1774,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: 'EXTRA-CURRICULAR COURSEWORK ',
-                                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                               fontWeight: FontWeight.normal,
                                                                                                             ),
                                                                                                       )
                                                                                                     ],
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
@@ -1793,7 +1794,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -1808,20 +1809,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'University of Nairobi/Stanford University Hasso Plattner institute : ',
-                                                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Introduction to Design Thinking',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 12.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: 'Outfit',
                                                                                                                   fontSize: 14.0,
                                                                                                                 ),
@@ -1841,7 +1842,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -1856,20 +1857,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Coursera/ California Institute of Arts : ',
-                                                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Fundamentals of Graphic design',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 12.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -1886,7 +1887,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -1901,20 +1902,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Coursera/ UC Irvine : ',
-                                                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Arduino and C Programming',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 12.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -1931,7 +1932,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -1946,20 +1947,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Coursera/ UC Irvine : ',
-                                                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'IOT and Embedded Systems',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 12.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -1976,7 +1977,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -1991,20 +1992,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Knight Center for Journalism/ UT Austin: ',
-                                                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Designing and Building Infographics',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 12.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2084,7 +2085,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             Text(
                                                                           'RELEVANT EXPERIENCE',
                                                                           style:
-                                                                              FlutterFlowTheme.of(context).title2,
+                                                                              FlutterFlowTheme.of(context).headlineMedium,
                                                                         ),
                                                                       ),
                                                                       SizedBox(
@@ -2138,7 +2139,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
                                                                                               child: Container(
                                                                                                 decoration: BoxDecoration(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   borderRadius: BorderRadius.circular(0.0),
                                                                                                 ),
                                                                                                 child: Padding(
@@ -2148,13 +2149,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Founder, Product Designer & Manager',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ),
@@ -2170,13 +2171,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Spirit Motorcycles',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.w500,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                   SizedBox(
@@ -2192,13 +2193,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Nairobi, Kenya',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.normal,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ],
@@ -2213,13 +2214,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 TextSpan(
                                                                                                   text: 'JANUARY 2018 -  ',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         fontWeight: FontWeight.normal,
                                                                                                       ),
                                                                                                 )
                                                                                               ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                             ),
                                                                                           ),
                                                                                         ),
@@ -2237,7 +2238,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2253,10 +2254,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Communicating with Clients to Gather and Understand their Aesthetic and Usability requirements.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2273,7 +2274,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2289,21 +2290,21 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Organizing Product Testing and ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Demo events ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'to receive product feedback.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2320,7 +2321,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2336,22 +2337,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Designing ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Product Mockups ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'to Narrow down the Ideal Customer Specification.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2368,7 +2369,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2384,18 +2385,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Refine or Redesign',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: ' product to Customer Specification.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2412,7 +2413,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2428,18 +2429,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Source',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: ' Parts, Suppliers, and Subcontractors for each project.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2456,7 +2457,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2472,18 +2473,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Iterate',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2505,12 +2506,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             await showModalBottomSheet(
                                                                                               isScrollControlled: true,
                                                                                               backgroundColor: Colors.transparent,
+                                                                                              barrierColor: Color(0x00000000),
                                                                                               enableDrag: false,
                                                                                               context: context,
-                                                                                              builder: (context) {
-                                                                                                return Padding(
-                                                                                                  padding: MediaQuery.of(context).viewInsets,
-                                                                                                  child: PortfolioView1Widget(),
+                                                                                              builder: (bottomSheetContext) {
+                                                                                                return GestureDetector(
+                                                                                                  onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                                  child: Padding(
+                                                                                                    padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                                    child: PortfolioView1Widget(),
+                                                                                                  ),
                                                                                                 );
                                                                                               },
                                                                                             ).then((value) => setState(() {}));
@@ -2524,13 +2529,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             padding: EdgeInsetsDirectional.fromSTEB(19.0, 19.0, 19.0, 19.0),
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                            textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                 ),
                                                                                             elevation: 1.0,
                                                                                             borderSide: BorderSide(
-                                                                                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                              color: FlutterFlowTheme.of(context).tertiary,
                                                                                               width: 1.0,
                                                                                             ),
                                                                                             borderRadius: BorderRadius.circular(0.0),
@@ -2561,7 +2566,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
                                                                                               child: Container(
                                                                                                 decoration: BoxDecoration(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   borderRadius: BorderRadius.circular(0.0),
                                                                                                 ),
                                                                                                 child: Padding(
@@ -2571,13 +2576,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Consultant Designer ',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ),
@@ -2593,13 +2598,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Contract',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.w500,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                   SizedBox(
@@ -2615,13 +2620,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Nairobi, Kenya',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.normal,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ],
@@ -2636,13 +2641,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 TextSpan(
                                                                                                   text: 'JULY 2013 -  ',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         fontWeight: FontWeight.normal,
                                                                                                       ),
                                                                                                 )
                                                                                               ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                             ),
                                                                                           ),
                                                                                         ),
@@ -2660,7 +2665,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2676,32 +2681,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Consulting on ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Design',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: ' and ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Management ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'of Projects across multiple sectors',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2718,7 +2723,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2734,18 +2739,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Designing and Producing ',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: 'Websites, Infographics, Architectural Visualizations, Posters, UX, and Merchandise',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2762,7 +2767,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2778,18 +2783,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Source',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: ' Components, Suppliers, and Subcontractors for each project.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2806,7 +2811,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 Icon(
                                                                                                   Icons.album,
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   size: 11.0,
                                                                                                 ),
                                                                                                 Expanded(
@@ -2822,18 +2827,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             children: [
                                                                                                               TextSpan(
                                                                                                                 text: 'Iterate',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                       fontFamily: 'Outfit',
-                                                                                                                      color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                      color: FlutterFlowTheme.of(context).primary,
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
                                                                                                               ),
                                                                                                               TextSpan(
                                                                                                                 text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                               )
                                                                                                             ],
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                            style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                           ),
                                                                                                         ),
                                                                                                       ],
@@ -2863,13 +2868,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             padding: EdgeInsetsDirectional.fromSTEB(19.0, 19.0, 19.0, 19.0),
                                                                                             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                            textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                            textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                   fontFamily: 'Outfit',
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                 ),
                                                                                             elevation: 1.0,
                                                                                             borderSide: BorderSide(
-                                                                                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                              color: FlutterFlowTheme.of(context).tertiary,
                                                                                               width: 1.0,
                                                                                             ),
                                                                                             borderRadius: BorderRadius.circular(0.0),
@@ -2882,156 +2887,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               ),
                                                                             ),
                                                                           ],
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ),
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          2.0,
-                                                                          2.0,
-                                                                          2.0,
-                                                                          12.0),
-                                                              child: Container(
-                                                                height: 190.0,
-                                                                decoration:
-                                                                    BoxDecoration(
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .secondaryBackground,
-                                                                  boxShadow: [
-                                                                    BoxShadow(
-                                                                      blurRadius:
-                                                                          4.0,
-                                                                      color: Color(
-                                                                          0x34090F13),
-                                                                      offset: Offset(
-                                                                          0.0,
-                                                                          2.0),
-                                                                    )
-                                                                  ],
-                                                                  borderRadius:
-                                                                      BorderRadius
-                                                                          .circular(
-                                                                              0.0),
-                                                                ),
-                                                                child: Padding(
-                                                                  padding: EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          22.0,
-                                                                          26.0,
-                                                                          22.0,
-                                                                          26.0),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .max,
-                                                                    crossAxisAlignment:
-                                                                        CrossAxisAlignment
-                                                                            .start,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            12.0,
-                                                                            12.0,
-                                                                            0.0,
-                                                                            6.0),
-                                                                        child:
-                                                                            Text(
-                                                                          'ADDITIONAL EXPERIENCE',
-                                                                          style:
-                                                                              FlutterFlowTheme.of(context).title2,
-                                                                        ),
-                                                                      ),
-                                                                      SizedBox(
-                                                                        width:
-                                                                            50.0,
-                                                                        child:
-                                                                            Divider(
-                                                                          height:
-                                                                              2.0,
-                                                                          thickness:
-                                                                              2.0,
-                                                                          indent:
-                                                                              12.0,
-                                                                          endIndent:
-                                                                              2.0,
-                                                                          color:
-                                                                              Color(0xA495A1AC),
-                                                                        ),
-                                                                      ),
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            4.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Text(
-                                                                          'Goals',
-                                                                          style:
-                                                                              FlutterFlowTheme.of(context).bodyText2,
-                                                                        ),
-                                                                      ),
-                                                                      Expanded(
-                                                                        child:
-                                                                            Row(
-                                                                          mainAxisSize:
-                                                                              MainAxisSize.max,
-                                                                          mainAxisAlignment:
-                                                                              MainAxisAlignment.spaceBetween,
-                                                                          crossAxisAlignment:
-                                                                              CrossAxisAlignment.end,
-                                                                          children: [
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
-                                                                              child: Text(
-                                                                                'Progress',
-                                                                                style: FlutterFlowTheme.of(context).bodyText2,
-                                                                              ),
-                                                                            ),
-                                                                            Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
-                                                                              child: Text(
-                                                                                '4/10',
-                                                                                style: FlutterFlowTheme.of(context).bodyText2,
-                                                                              ),
-                                                                            ),
-                                                                          ],
-                                                                        ),
-                                                                      ),
-                                                                      Expanded(
-                                                                        child:
-                                                                            Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              8.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              LinearPercentIndicator(
-                                                                            percent:
-                                                                                0.4,
-                                                                            width:
-                                                                                MediaQuery.of(context).size.width * 0.38,
-                                                                            lineHeight:
-                                                                                8.0,
-                                                                            animation:
-                                                                                true,
-                                                                            progressColor:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
-                                                                            backgroundColor:
-                                                                                Color(0xFFE0E3E7),
-                                                                            barRadius:
-                                                                                Radius.circular(8.0),
-                                                                            padding:
-                                                                                EdgeInsets.zero,
-                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ],
@@ -3102,7 +2957,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           Text(
                                                                         'PROFILE',
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .title2,
+                                                                            .headlineMedium,
                                                                       ),
                                                                     ),
                                                                   ],
@@ -3146,10 +3001,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           text:
                                                                               ' A passionate ',
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .subtitle2
+                                                                              .titleSmall
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                                 fontSize: 14.0,
                                                                                 fontWeight: FontWeight.normal,
                                                                               ),
@@ -3158,7 +3013,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           text:
                                                                               'Designer, Maker ',
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .bodyText1
+                                                                              .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
                                                                                 decoration: TextDecoration.underline,
@@ -3168,10 +3023,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           text:
                                                                               'and ',
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .subtitle2
+                                                                              .titleSmall
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                                 fontSize: 14.0,
                                                                                 fontWeight: FontWeight.normal,
                                                                               ),
@@ -3180,7 +3035,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           text:
                                                                               'Builder ',
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .bodyText1
+                                                                              .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
                                                                                 decoration: TextDecoration.underline,
@@ -3192,7 +3047,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           style:
                                                                               TextStyle(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                             fontSize:
                                                                                 14.0,
                                                                           ),
@@ -3200,7 +3055,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -3233,7 +3088,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           style:
                                                                               TextStyle(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                         ),
                                                                         TextSpan(
@@ -3242,7 +3097,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           style:
                                                                               TextStyle(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                         ),
                                                                         TextSpan(
@@ -3251,13 +3106,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           style:
                                                                               TextStyle(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -3356,7 +3211,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             'PREVIOUS WORK',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .title2,
+                                                                .headlineMedium,
                                                           ),
                                                         ),
                                                         SizedBox(
@@ -3474,7 +3329,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           decoration:
                                                                               BoxDecoration(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                FlutterFlowTheme.of(context).tertiary,
                                                                             borderRadius:
                                                                                 BorderRadius.circular(0.0),
                                                                           ),
@@ -3491,14 +3346,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'PRODUCT',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                           fontWeight: FontWeight.normal,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                           ),
@@ -3536,15 +3391,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               true,
                                                                           backgroundColor:
                                                                               Colors.transparent,
+                                                                          barrierColor:
+                                                                              Color(0x00000000),
                                                                           enableDrag:
                                                                               false,
                                                                           context:
                                                                               context,
                                                                           builder:
-                                                                              (context) {
-                                                                            return Padding(
-                                                                              padding: MediaQuery.of(context).viewInsets,
-                                                                              child: ViewProjectItemWidget(),
+                                                                              (bottomSheetContext) {
+                                                                            return GestureDetector(
+                                                                              onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                              child: Padding(
+                                                                                padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                child: ViewProjectItemWidget(),
+                                                                              ),
                                                                             );
                                                                           },
                                                                         ).then((value) =>
@@ -3662,7 +3522,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                         padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                         child: Text(
                                                                                                           'CLIENTS',
-                                                                                                          style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 color: Colors.white,
                                                                                                               ),
@@ -3682,7 +3542,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                         padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                         child: Text(
                                                                                                           'Spirit',
-                                                                                                          style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 color: Colors.white,
                                                                                                               ),
@@ -3702,7 +3562,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                         padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                         child: Text(
                                                                                                           'Others',
-                                                                                                          style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 color: Colors.white,
                                                                                                               ),
@@ -3809,7 +3669,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              FlutterFlowTheme.of(context).tertiary,
                                                                           borderRadius:
                                                                               BorderRadius.circular(0.0),
                                                                         ),
@@ -3827,14 +3687,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               children: [
                                                                                 TextSpan(
                                                                                   text: 'BRANDING',
-                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         fontFamily: 'Outfit',
                                                                                         color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         fontWeight: FontWeight.normal,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                             ),
                                                                           ),
                                                                         ),
@@ -3871,17 +3731,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             true,
                                                                         backgroundColor:
                                                                             Colors.transparent,
+                                                                        barrierColor:
+                                                                            Color(0x00000000),
                                                                         enableDrag:
                                                                             false,
                                                                         context:
                                                                             context,
                                                                         builder:
-                                                                            (context) {
-                                                                          return Padding(
-                                                                            padding:
-                                                                                MediaQuery.of(context).viewInsets,
+                                                                            (bottomSheetContext) {
+                                                                          return GestureDetector(
+                                                                            onTap: () =>
+                                                                                FocusScope.of(context).requestFocus(_unfocusNode),
                                                                             child:
-                                                                                ViewProjectItemWidget(),
+                                                                                Padding(
+                                                                              padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                              child: ViewProjectItemWidget(),
+                                                                            ),
                                                                           );
                                                                         },
                                                                       ).then((value) =>
@@ -3992,13 +3857,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 TextSpan(
                                                                                                   text: 'Branding',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       ),
                                                                                                 )
                                                                                               ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                             ),
                                                                                           ),
                                                                                         ),
@@ -4040,7 +3905,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'CLIENTS',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4060,7 +3925,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'Spirit',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4080,7 +3945,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'MrFixit',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4177,7 +4042,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              FlutterFlowTheme.of(context).tertiary,
                                                                           borderRadius:
                                                                               BorderRadius.circular(0.0),
                                                                         ),
@@ -4194,15 +4059,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 TextSpan(
                                                                               children: [
                                                                                 TextSpan(
-                                                                                  text: 'UX / MOBILE',
-                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                  text: 'UX / MOBILE / WEB',
+                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         fontFamily: 'Outfit',
                                                                                         color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         fontWeight: FontWeight.normal,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                             ),
                                                                           ),
                                                                         ),
@@ -4239,17 +4104,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             true,
                                                                         backgroundColor:
                                                                             Colors.transparent,
+                                                                        barrierColor:
+                                                                            Color(0x00000000),
                                                                         enableDrag:
                                                                             false,
                                                                         context:
                                                                             context,
                                                                         builder:
-                                                                            (context) {
-                                                                          return Padding(
-                                                                            padding:
-                                                                                MediaQuery.of(context).viewInsets,
+                                                                            (bottomSheetContext) {
+                                                                          return GestureDetector(
+                                                                            onTap: () =>
+                                                                                FocusScope.of(context).requestFocus(_unfocusNode),
                                                                             child:
-                                                                                ViewProjectItemWidget(),
+                                                                                Padding(
+                                                                              padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                              child: ViewProjectItemWidget(),
+                                                                            ),
                                                                           );
                                                                         },
                                                                       ).then((value) =>
@@ -4377,7 +4247,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'CLIENTS',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4397,7 +4267,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'Spirit',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4417,7 +4287,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'MrFixit',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4513,7 +4383,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         decoration:
                                                                             BoxDecoration(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              FlutterFlowTheme.of(context).tertiary,
                                                                           borderRadius:
                                                                               BorderRadius.circular(0.0),
                                                                         ),
@@ -4531,14 +4401,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               children: [
                                                                                 TextSpan(
                                                                                   text: '3D',
-                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         fontFamily: 'Outfit',
                                                                                         color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         fontWeight: FontWeight.normal,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                             ),
                                                                           ),
                                                                         ),
@@ -4575,17 +4445,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             true,
                                                                         backgroundColor:
                                                                             Colors.transparent,
+                                                                        barrierColor:
+                                                                            Color(0x00000000),
                                                                         enableDrag:
                                                                             false,
                                                                         context:
                                                                             context,
                                                                         builder:
-                                                                            (context) {
-                                                                          return Padding(
-                                                                            padding:
-                                                                                MediaQuery.of(context).viewInsets,
+                                                                            (bottomSheetContext) {
+                                                                          return GestureDetector(
+                                                                            onTap: () =>
+                                                                                FocusScope.of(context).requestFocus(_unfocusNode),
                                                                             child:
-                                                                                ViewProjectItemWidget(),
+                                                                                Padding(
+                                                                              padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                              child: ViewProjectItemWidget(),
+                                                                            ),
                                                                           );
                                                                         },
                                                                       ).then((value) =>
@@ -4718,13 +4593,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               children: [
                                                                                                 TextSpan(
                                                                                                   text: '3D',
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                       ),
                                                                                                 )
                                                                                               ],
-                                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                             ),
                                                                                           ),
                                                                                         ),
@@ -4766,7 +4641,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                       child: Text(
                                                                                                         'CLIENTS',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4786,7 +4661,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'Spirit',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4806,7 +4681,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                       child: Text(
                                                                                                         'Others',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: Colors.white,
                                                                                                             ),
@@ -4840,6 +4715,465 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 ),
                                               ),
                                             ],
+                                          ),
+                                        ),
+                                      ),
+                                    if ((FFAppState().currentPage ==
+                                            'Resume') &&
+                                        responsiveVisibility(
+                                          context: context,
+                                          phone: false,
+                                          tablet: false,
+                                        ))
+                                      Container(
+                                        height:
+                                            MediaQuery.of(context).size.height *
+                                                1.0,
+                                        constraints: BoxConstraints(
+                                          maxWidth: 1200.0,
+                                        ),
+                                        decoration: BoxDecoration(),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  30.0, 30.0, 30.0, 30.0),
+                                          child: SingleChildScrollView(
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 36.0, 0.0, 8.0),
+                                                  child: Wrap(
+                                                    spacing: 8.0,
+                                                    runSpacing: 0.0,
+                                                    alignment:
+                                                        WrapAlignment.start,
+                                                    crossAxisAlignment:
+                                                        WrapCrossAlignment
+                                                            .start,
+                                                    direction: Axis.horizontal,
+                                                    runAlignment:
+                                                        WrapAlignment.start,
+                                                    verticalDirection:
+                                                        VerticalDirection.down,
+                                                    clipBehavior: Clip.none,
+                                                    children: [
+                                                      Container(
+                                                        constraints:
+                                                            BoxConstraints(
+                                                          maxWidth: 800.0,
+                                                        ),
+                                                        decoration:
+                                                            BoxDecoration(),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          children: [
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          2.0,
+                                                                          2.0,
+                                                                          2.0,
+                                                                          12.0),
+                                                              child: Container(
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                                  boxShadow: [
+                                                                    BoxShadow(
+                                                                      blurRadius:
+                                                                          4.0,
+                                                                      color: Color(
+                                                                          0x34090F13),
+                                                                      offset: Offset(
+                                                                          0.0,
+                                                                          2.0),
+                                                                    )
+                                                                  ],
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              0.0),
+                                                                ),
+                                                                child: Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          22.0,
+                                                                          26.0,
+                                                                          22.0,
+                                                                          26.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .min,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Row(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        children: [
+                                                                          Padding(
+                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                                12.0,
+                                                                                12.0,
+                                                                                0.0,
+                                                                                6.0),
+                                                                            child:
+                                                                                Text(
+                                                                              'MY RESUME',
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
+                                                                            ),
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                      SizedBox(
+                                                                        width:
+                                                                            50.0,
+                                                                        child:
+                                                                            Divider(
+                                                                          height:
+                                                                              2.0,
+                                                                          thickness:
+                                                                              2.0,
+                                                                          indent:
+                                                                              12.0,
+                                                                          endIndent:
+                                                                              2.0,
+                                                                          color:
+                                                                              Color(0xA495A1AC),
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                            Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          2.0,
+                                                                          2.0,
+                                                                          2.0,
+                                                                          12.0),
+                                                              child: Container(
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                                  boxShadow: [
+                                                                    BoxShadow(
+                                                                      blurRadius:
+                                                                          4.0,
+                                                                      color: Color(
+                                                                          0x34090F13),
+                                                                      offset: Offset(
+                                                                          0.0,
+                                                                          2.0),
+                                                                    )
+                                                                  ],
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              0.0),
+                                                                ),
+                                                                child: Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          22.0,
+                                                                          26.0,
+                                                                          22.0,
+                                                                          26.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      SizedBox(
+                                                                        width:
+                                                                            50.0,
+                                                                        child:
+                                                                            Divider(
+                                                                          height:
+                                                                              2.0,
+                                                                          thickness:
+                                                                              2.0,
+                                                                          indent:
+                                                                              12.0,
+                                                                          endIndent:
+                                                                              2.0,
+                                                                          color:
+                                                                              Color(0xA495A1AC),
+                                                                        ),
+                                                                      ),
+                                                                      FlutterFlowPdfViewer(
+                                                                        assetPath:
+                                                                            'assets/pdfs/RESUME_EDGAR.pdf',
+                                                                        height:
+                                                                            800.0,
+                                                                        horizontalScroll:
+                                                                            false,
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                      Visibility(
+                                                        visible:
+                                                            responsiveVisibility(
+                                                          context: context,
+                                                          desktop: false,
+                                                        ),
+                                                        child: Container(
+                                                          constraints:
+                                                              BoxConstraints(
+                                                            maxWidth: 800.0,
+                                                          ),
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: Color(
+                                                                0xFFDADAD4),
+                                                            boxShadow: [
+                                                              BoxShadow(
+                                                                blurRadius: 4.0,
+                                                                color: Color(
+                                                                    0x34090F13),
+                                                                offset: Offset(
+                                                                    0.0, 2.0),
+                                                              )
+                                                            ],
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        0.0),
+                                                          ),
+                                                          child: Padding(
+                                                            padding:
+                                                                EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        24.0,
+                                                                        26.0,
+                                                                        24.0,
+                                                                        24.0),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              crossAxisAlignment:
+                                                                  CrossAxisAlignment
+                                                                      .start,
+                                                              children: [
+                                                                Row(
+                                                                  mainAxisSize:
+                                                                      MainAxisSize
+                                                                          .max,
+                                                                  children: [
+                                                                    Padding(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          0.0,
+                                                                          12.0,
+                                                                          0.0,
+                                                                          6.0),
+                                                                      child:
+                                                                          Text(
+                                                                        'PROFILE',
+                                                                        style: FlutterFlowTheme.of(context)
+                                                                            .headlineMedium,
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                                SizedBox(
+                                                                  width: 50.0,
+                                                                  child:
+                                                                      Divider(
+                                                                    height: 2.0,
+                                                                    thickness:
+                                                                        2.0,
+                                                                    indent: 2.0,
+                                                                    endIndent:
+                                                                        5.0,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .primaryBackground,
+                                                                  ),
+                                                                ),
+                                                                Container(
+                                                                  decoration:
+                                                                      BoxDecoration(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryBackground,
+                                                                  ),
+                                                                ),
+                                                                Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          12.0,
+                                                                          0.0,
+                                                                          6.0),
+                                                                  child:
+                                                                      RichText(
+                                                                    text:
+                                                                        TextSpan(
+                                                                      children: [
+                                                                        TextSpan(
+                                                                          text:
+                                                                              ' A passionate ',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .override(
+                                                                                fontFamily: 'Outfit',
+                                                                                color: FlutterFlowTheme.of(context).primary,
+                                                                                fontSize: 14.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'Designer, Maker ',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Outfit',
+                                                                                decoration: TextDecoration.underline,
+                                                                              ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'and ',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .titleSmall
+                                                                              .override(
+                                                                                fontFamily: 'Outfit',
+                                                                                color: FlutterFlowTheme.of(context).primary,
+                                                                                fontSize: 14.0,
+                                                                                fontWeight: FontWeight.normal,
+                                                                              ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'Builder ',
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .override(
+                                                                                fontFamily: 'Outfit',
+                                                                                decoration: TextDecoration.underline,
+                                                                              ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'with an interest in pushing the quality of not just digital design, but physical products and spaces as well. ',
+                                                                          style:
+                                                                              TextStyle(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                            fontSize:
+                                                                                14.0,
+                                                                          ),
+                                                                        )
+                                                                      ],
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Outfit',
+                                                                            fontSize:
+                                                                                18.0,
+                                                                            lineHeight:
+                                                                                1.4,
+                                                                          ),
+                                                                    ),
+                                                                    textAlign:
+                                                                        TextAlign
+                                                                            .justify,
+                                                                  ),
+                                                                ),
+                                                                Padding(
+                                                                  padding: EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          12.0,
+                                                                          0.0,
+                                                                          6.0),
+                                                                  child:
+                                                                      RichText(
+                                                                    text:
+                                                                        TextSpan(
+                                                                      children: [
+                                                                        TextSpan(
+                                                                          text:
+                                                                              ' I try to use my technical academic background, experience within startups and non governmental organizations, creativity, and my passion for technology and Life Long Learning to create ',
+                                                                          style:
+                                                                              TextStyle(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'unique approaches ',
+                                                                          style:
+                                                                              TextStyle(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                        ),
+                                                                        TextSpan(
+                                                                          text:
+                                                                              'to the design we experience. Design, at its best, can Transform lives and Create Joy.',
+                                                                          style:
+                                                                              TextStyle(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primary,
+                                                                          ),
+                                                                        )
+                                                                      ],
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Outfit',
+                                                                            fontSize:
+                                                                                14.0,
+                                                                            lineHeight:
+                                                                                1.4,
+                                                                          ),
+                                                                    ),
+                                                                    textAlign:
+                                                                        TextAlign
+                                                                            .justify,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -4878,7 +5212,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         icon: Icon(
                                           Icons.menu,
                                           color: FlutterFlowTheme.of(context)
-                                              .tertiaryColor,
+                                              .tertiary,
                                           size: 30.0,
                                         ),
                                         onPressed: () async {
@@ -4962,7 +5296,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 'Hi, I\'m Edgar',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .title1,
+                                                                    .displaySmall,
                                                               ),
                                                             ),
                                                             SizedBox(
@@ -4992,7 +5326,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           ' A passionate Designer, Maker and Builder with an interest in pushing the quality of not just digital design, but physical products and spaces as well. ',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .subtitle2
+                                                                          .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -5009,7 +5343,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           ' I try to use my technical academic background, experience within startups and non-governmental organizations, creativity, and my passion for technology and Life-long Learning to create products that delight.',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .subtitle2
+                                                                          .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -5022,7 +5356,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   ],
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyText1
+                                                                      .bodyMedium
                                                                       .override(
                                                                         fontFamily:
                                                                             'Outfit',
@@ -5096,7 +5430,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   'What I Do',
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .title1,
+                                                                      .displaySmall,
                                                                 ),
                                                               ),
                                                               SizedBox(
@@ -5127,7 +5461,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         text:
                                                                             'I am Interested in ',
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -5145,7 +5479,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         text:
                                                                             ' and ',
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -5161,7 +5495,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         text:
                                                                             ' and ',
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -5177,7 +5511,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         text:
                                                                             'I am Ambitious and Excited by the combination of Technology and Great Design in Inspiring and Delighting others.',
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -5186,7 +5520,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     ],
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .bodyText1
+                                                                        .bodyMedium
                                                                         .override(
                                                                           fontFamily:
                                                                               'Outfit',
@@ -5236,7 +5570,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         borderRadius:
                                                                             BorderRadius.circular(0.0),
                                                                       ),
@@ -5254,7 +5588,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'UX DESIGN',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                       fontWeight: FontWeight.normal,
@@ -5262,7 +5596,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.center,
@@ -5273,7 +5607,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         borderRadius:
                                                                             BorderRadius.circular(0.0),
                                                                       ),
@@ -5291,7 +5625,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'CROSS-PLATFORM MOBILE APPLICATIONS',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                       fontWeight: FontWeight.normal,
@@ -5299,7 +5633,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.center,
@@ -5310,7 +5644,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         borderRadius:
                                                                             BorderRadius.circular(0.0),
                                                                       ),
@@ -5328,7 +5662,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'DIGITAL AND INTERACTIVE DESIGN',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                       fontWeight: FontWeight.normal,
@@ -5336,7 +5670,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.center,
@@ -5347,7 +5681,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         borderRadius:
                                                                             BorderRadius.circular(0.0),
                                                                       ),
@@ -5365,7 +5699,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'PRODUCT MANAGEMENT',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                       fontWeight: FontWeight.normal,
@@ -5373,7 +5707,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.center,
@@ -5384,7 +5718,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
-                                                                            .tertiaryColor,
+                                                                            .tertiary,
                                                                         borderRadius:
                                                                             BorderRadius.circular(0.0),
                                                                       ),
@@ -5402,7 +5736,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'PROJECT MANAGEMENT',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                       fontWeight: FontWeight.normal,
@@ -5410,7 +5744,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                           textAlign:
                                                                               TextAlign.center,
@@ -5468,17 +5802,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .primaryBackground,
                                                                         textStyle: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
-                                                                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              color: FlutterFlowTheme.of(context).tertiary,
                                                                             ),
                                                                         elevation:
                                                                             1.0,
                                                                         borderSide:
                                                                             BorderSide(
                                                                           color:
-                                                                              FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              FlutterFlowTheme.of(context).tertiary,
                                                                           width:
                                                                               1.0,
                                                                         ),
@@ -5526,17 +5860,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           color:
                                                                               FlutterFlowTheme.of(context).primaryBackground,
                                                                           textStyle: FlutterFlowTheme.of(context)
-                                                                              .subtitle2
+                                                                              .titleSmall
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
-                                                                                color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                color: FlutterFlowTheme.of(context).tertiary,
                                                                               ),
                                                                           elevation:
                                                                               1.0,
                                                                           borderSide:
                                                                               BorderSide(
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                FlutterFlowTheme.of(context).tertiary,
                                                                             width:
                                                                                 1.0,
                                                                           ),
@@ -5585,7 +5919,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               TextAlign.center,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .title1,
+                                                              .displaySmall,
                                                         ),
                                                         Container(
                                                           width: MediaQuery.of(
@@ -5627,7 +5961,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       .center,
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2,
+                                                                  .bodySmall,
                                                             ),
                                                             SizedBox(
                                                               height: 20.0,
@@ -5638,14 +5972,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 endIndent: 2.0,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiaryColor,
+                                                                    .tertiary,
                                                               ),
                                                             ),
                                                             Text(
                                                               '778 889 8646',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2,
+                                                                  .bodySmall,
                                                             ),
                                                             SizedBox(
                                                               height: 20.0,
@@ -5656,14 +5990,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 endIndent: 2.0,
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiaryColor,
+                                                                    .tertiary,
                                                               ),
                                                             ),
                                                             Text(
                                                               'Edgar.Ondati@gmail.com',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2,
+                                                                  .bodySmall,
                                                             ),
                                                           ],
                                                         ),
@@ -5758,7 +6092,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'HIGHLIGHTS OF QUALIFICATIONS',
-                                                                              style: FlutterFlowTheme.of(context).title2,
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
                                                                             ),
                                                                           ),
                                                                           SizedBox(
@@ -5792,7 +6126,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                     children: [
                                                                                       Icon(
                                                                                         Icons.album,
-                                                                                        color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                        color: FlutterFlowTheme.of(context).tertiary,
                                                                                         size: 11.0,
                                                                                       ),
                                                                                       Expanded(
@@ -5809,20 +6143,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: 'BACHELORS DEGREE IN COMPUTER SCIENCE ',
-                                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 14.0,
                                                                                                             ),
                                                                                                       ),
                                                                                                       TextSpan(
                                                                                                         text: 'With experience in multi- disciplinary environments including Web, UX, 3D, Interior, and Product design.',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 12.0,
                                                                                                             ),
                                                                                                       )
                                                                                                     ],
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                           fontFamily: 'Outfit',
                                                                                                           fontSize: 14.0,
                                                                                                         ),
@@ -5843,7 +6177,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                     children: [
                                                                                       Icon(
                                                                                         Icons.album,
-                                                                                        color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                        color: FlutterFlowTheme.of(context).tertiary,
                                                                                         size: 11.0,
                                                                                       ),
                                                                                       Expanded(
@@ -5860,20 +6194,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: 'PRODUCT MANAGEMENT ',
-                                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 14.0,
                                                                                                             ),
                                                                                                       ),
                                                                                                       TextSpan(
                                                                                                         text: 'Designing, planning, sourcing and managing project execution in different sectors including Construction, Automotive, Events, among others.',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 12.0,
                                                                                                             ),
                                                                                                       )
                                                                                                     ],
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
@@ -5891,7 +6225,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                     children: [
                                                                                       Icon(
                                                                                         Icons.album,
-                                                                                        color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                        color: FlutterFlowTheme.of(context).tertiary,
                                                                                         size: 11.0,
                                                                                       ),
                                                                                       Expanded(
@@ -5908,20 +6242,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: 'PRODUCT DESIGN ',
-                                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 14.0,
                                                                                                             ),
                                                                                                       ),
                                                                                                       TextSpan(
                                                                                                         text: 'User Centric Design, understanding client needs and working with local and Global suppliers to deliver the best quality within their budget and requirements.',
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               fontSize: 12.0,
                                                                                                             ),
                                                                                                       )
                                                                                                     ],
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
@@ -5992,7 +6326,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'SKILLS',
-                                                                              style: FlutterFlowTheme.of(context).title2,
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
                                                                             ),
                                                                           ),
                                                                           SizedBox(
@@ -6035,7 +6369,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             radius: 40.0,
                                                                                             lineWidth: 18.0,
                                                                                             animation: true,
-                                                                                            progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                            progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                             backgroundColor: Color(0xFFE0E3E7),
                                                                                           ),
                                                                                         ),
@@ -6050,7 +6384,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 Text(
                                                                                                   'Project\nManagement',
                                                                                                   textAlign: TextAlign.center,
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         lineHeight: 0.9,
                                                                                                       ),
@@ -6074,7 +6408,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             radius: 40.0,
                                                                                             lineWidth: 18.0,
                                                                                             animation: true,
-                                                                                            progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                            progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                             backgroundColor: Color(0xFFE0E3E7),
                                                                                           ),
                                                                                         ),
@@ -6089,7 +6423,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 Text(
                                                                                                   'Illustrator',
                                                                                                   textAlign: TextAlign.center,
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         lineHeight: 0.9,
                                                                                                       ),
@@ -6113,7 +6447,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             radius: 40.0,
                                                                                             lineWidth: 18.0,
                                                                                             animation: true,
-                                                                                            progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                            progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                             backgroundColor: Color(0xFFE0E3E7),
                                                                                           ),
                                                                                         ),
@@ -6128,7 +6462,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 Text(
                                                                                                   'Sketchup',
                                                                                                   textAlign: TextAlign.center,
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         lineHeight: 0.9,
                                                                                                       ),
@@ -6152,7 +6486,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             radius: 40.0,
                                                                                             lineWidth: 18.0,
                                                                                             animation: true,
-                                                                                            progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                            progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                             backgroundColor: Color(0xFFE0E3E7),
                                                                                           ),
                                                                                         ),
@@ -6167,7 +6501,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 Text(
                                                                                                   'Flutter / Dart',
                                                                                                   textAlign: TextAlign.center,
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         lineHeight: 0.9,
                                                                                                       ),
@@ -6191,7 +6525,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             radius: 40.0,
                                                                                             lineWidth: 18.0,
                                                                                             animation: true,
-                                                                                            progressColor: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                            progressColor: FlutterFlowTheme.of(context).tertiary,
                                                                                             backgroundColor: Color(0xFFE0E3E7),
                                                                                           ),
                                                                                         ),
@@ -6206,7 +6540,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 Text(
                                                                                                   'Lumion',
                                                                                                   textAlign: TextAlign.center,
-                                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                         fontFamily: 'Outfit',
                                                                                                         lineHeight: 0.9,
                                                                                                       ),
@@ -6279,7 +6613,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'EDUCATION',
-                                                                              style: FlutterFlowTheme.of(context).title2,
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
                                                                             ),
                                                                           ),
                                                                           SizedBox(
@@ -6323,14 +6657,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     TextSpan(
                                                                                                       text: 'BACHELORS DEGREE ',
-                                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                      style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                             fontFamily: 'Outfit',
                                                                                                             fontSize: 14.0,
                                                                                                           ),
                                                                                                     ),
                                                                                                     TextSpan(
                                                                                                       text: 'SEPTEMBER 2009 - MAY 2013 ',
-                                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                      style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                             fontFamily: 'Outfit',
                                                                                                             fontSize: 14.0,
                                                                                                             fontWeight: FontWeight.normal,
@@ -6338,13 +6672,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     ),
                                                                                                     TextSpan(
                                                                                                       text: 'University of Nairobi: BSc. Computer Science',
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                      style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                             fontFamily: 'Outfit',
                                                                                                             fontSize: 12.0,
                                                                                                           ),
                                                                                                     )
                                                                                                   ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                 ),
                                                                                               ),
                                                                                             ],
@@ -6370,7 +6704,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                                                                                                 child: Container(
                                                                                                   decoration: BoxDecoration(
-                                                                                                    color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                    color: FlutterFlowTheme.of(context).tertiary,
                                                                                                     borderRadius: BorderRadius.circular(0.0),
                                                                                                   ),
                                                                                                   child: Padding(
@@ -6380,14 +6714,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                         children: [
                                                                                                           TextSpan(
                                                                                                             text: 'EXTRA-CURRICULAR COURSEWORK ',
-                                                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                   fontFamily: 'Outfit',
                                                                                                                   color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                                   fontWeight: FontWeight.normal,
                                                                                                                 ),
                                                                                                           )
                                                                                                         ],
-                                                                                                        style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                       ),
                                                                                                     ),
                                                                                                   ),
@@ -6400,7 +6734,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6415,20 +6749,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'University of Nairobi/Stanford University Hasso Plattner institute : ',
-                                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Introduction to Design Thinking',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 12.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                       fontFamily: 'Outfit',
                                                                                                                       fontSize: 14.0,
                                                                                                                     ),
@@ -6448,7 +6782,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6463,20 +6797,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Coursera/ California Institute of Arts : ',
-                                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Fundamentals of Graphic design',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 12.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6493,7 +6827,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6508,20 +6842,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Coursera/ UC Irvine : ',
-                                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Arduino and C Programming',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 12.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6538,7 +6872,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6553,20 +6887,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Coursera/ UC Irvine : ',
-                                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'IOT and Embedded Systems',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 12.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6583,7 +6917,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6598,20 +6932,20 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Knight Center for Journalism/ UT Austin: ',
-                                                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Designing and Building Infographics',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
                                                                                                                           fontSize: 12.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6688,7 +7022,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'RELEVANT EXPERIENCE',
-                                                                              style: FlutterFlowTheme.of(context).title2,
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
                                                                             ),
                                                                           ),
                                                                           SizedBox(
@@ -6733,13 +7067,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     TextSpan(
                                                                                                       text: 'JANUARY 2018 -  ',
-                                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                      style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                             fontFamily: 'Outfit',
                                                                                                             fontWeight: FontWeight.normal,
                                                                                                           ),
                                                                                                     )
                                                                                                   ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                 ),
                                                                                               ),
                                                                                             ),
@@ -6753,7 +7087,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
                                                                                               child: Container(
                                                                                                 decoration: BoxDecoration(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   borderRadius: BorderRadius.circular(0.0),
                                                                                                 ),
                                                                                                 child: Column(
@@ -6766,13 +7100,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                           children: [
                                                                                                             TextSpan(
                                                                                                               text: 'Founder, Product Designer & Manager',
-                                                                                                              style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                              style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                                   ),
                                                                                                             )
                                                                                                           ],
-                                                                                                          style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                         ),
                                                                                                       ),
                                                                                                     ),
@@ -6797,13 +7131,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Spirit Motorcycles',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.w500,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                   SizedBox(
@@ -6811,7 +7145,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     child: VerticalDivider(
                                                                                                       thickness: 2.0,
                                                                                                       indent: 0.0,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                     ),
                                                                                                   ),
                                                                                                   RichText(
@@ -6819,13 +7153,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Nairobi, Kenya',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.normal,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ],
@@ -6845,7 +7179,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6861,10 +7195,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Communicating with Clients to Gather and Understand their Aesthetic and Usability requirements.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6881,7 +7215,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6897,21 +7231,21 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Organizing Product Testing and ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Demo events ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'to receive product feedback.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6928,7 +7262,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6944,22 +7278,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Designing ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Product Mockups ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'to Narrow down the Ideal Customer Specification.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -6976,7 +7310,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -6992,18 +7326,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Refine or Redesign',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: ' product to Customer Specification.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7020,7 +7354,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7036,18 +7370,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Source',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: ' Parts, Suppliers, and Subcontractors for each project.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7064,7 +7398,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7080,18 +7414,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Iterate',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7113,12 +7447,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 await showModalBottomSheet(
                                                                                                   isScrollControlled: true,
                                                                                                   backgroundColor: Colors.transparent,
+                                                                                                  barrierColor: Color(0x00000000),
                                                                                                   enableDrag: false,
                                                                                                   context: context,
-                                                                                                  builder: (context) {
-                                                                                                    return Padding(
-                                                                                                      padding: MediaQuery.of(context).viewInsets,
-                                                                                                      child: PortfolioView1Widget(),
+                                                                                                  builder: (bottomSheetContext) {
+                                                                                                    return GestureDetector(
+                                                                                                      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                                      child: Padding(
+                                                                                                        padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                                        child: PortfolioView1Widget(),
+                                                                                                      ),
                                                                                                     );
                                                                                                   },
                                                                                                 ).then((value) => setState(() {}));
@@ -7132,13 +7470,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 padding: EdgeInsetsDirectional.fromSTEB(19.0, 19.0, 19.0, 19.0),
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                       fontFamily: 'Outfit',
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                     ),
                                                                                                 elevation: 1.0,
                                                                                                 borderSide: BorderSide(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   width: 1.0,
                                                                                                 ),
                                                                                                 borderRadius: BorderRadius.circular(0.0),
@@ -7168,13 +7506,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     TextSpan(
                                                                                                       text: 'JULY 2013 -  ',
-                                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                      style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                             fontFamily: 'Outfit',
                                                                                                             fontWeight: FontWeight.normal,
                                                                                                           ),
                                                                                                     )
                                                                                                   ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                 ),
                                                                                               ),
                                                                                             ),
@@ -7188,7 +7526,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
                                                                                               child: Container(
                                                                                                 decoration: BoxDecoration(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   borderRadius: BorderRadius.circular(0.0),
                                                                                                 ),
                                                                                                 child: Column(
@@ -7201,13 +7539,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                           children: [
                                                                                                             TextSpan(
                                                                                                               text: 'Consultant Designer ',
-                                                                                                              style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                              style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                                   ),
                                                                                                             )
                                                                                                           ],
-                                                                                                          style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                          style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                         ),
                                                                                                       ),
                                                                                                     ),
@@ -7232,13 +7570,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Contract',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.w500,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                   SizedBox(
@@ -7246,7 +7584,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     child: VerticalDivider(
                                                                                                       thickness: 2.0,
                                                                                                       indent: 0.0,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                     ),
                                                                                                   ),
                                                                                                   RichText(
@@ -7254,13 +7592,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                       children: [
                                                                                                         TextSpan(
                                                                                                           text: 'Nairobi, Kenya',
-                                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                                 fontFamily: 'Outfit',
                                                                                                                 fontWeight: FontWeight.normal,
                                                                                                               ),
                                                                                                         )
                                                                                                       ],
-                                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                     ),
                                                                                                   ),
                                                                                                 ],
@@ -7280,7 +7618,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7296,32 +7634,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Consulting on ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Design',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: ' and ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Management ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'of Projects across multiple sectors',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7338,7 +7676,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7354,18 +7692,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Designing and Producing ',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: 'Websites, Infographics, Architectural Visualizations, Posters, UX, and Merchandise',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7382,7 +7720,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7398,18 +7736,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Source',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: ' Components, Suppliers, and Subcontractors for each project.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7426,7 +7764,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   children: [
                                                                                                     Icon(
                                                                                                       Icons.album,
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                       size: 11.0,
                                                                                                     ),
                                                                                                     Expanded(
@@ -7442,18 +7780,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                 children: [
                                                                                                                   TextSpan(
                                                                                                                     text: 'Iterate',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                                           fontFamily: 'Outfit',
-                                                                                                                          color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                                                          color: FlutterFlowTheme.of(context).primary,
                                                                                                                           fontSize: 14.0,
                                                                                                                         ),
                                                                                                                   ),
                                                                                                                   TextSpan(
                                                                                                                     text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                                                   )
                                                                                                                 ],
-                                                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                               ),
                                                                                                             ),
                                                                                                           ],
@@ -7483,13 +7821,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 padding: EdgeInsetsDirectional.fromSTEB(19.0, 19.0, 19.0, 19.0),
                                                                                                 iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                                 color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                textStyle: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                       fontFamily: 'Outfit',
-                                                                                                      color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                      color: FlutterFlowTheme.of(context).tertiary,
                                                                                                     ),
                                                                                                 elevation: 1.0,
                                                                                                 borderSide: BorderSide(
-                                                                                                  color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                                  color: FlutterFlowTheme.of(context).tertiary,
                                                                                                   width: 1.0,
                                                                                                 ),
                                                                                                 borderRadius: BorderRadius.circular(0.0),
@@ -7563,7 +7901,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'ADDITIONAL EXPERIENCE',
-                                                                              style: FlutterFlowTheme.of(context).title2,
+                                                                              style: FlutterFlowTheme.of(context).headlineMedium,
                                                                             ),
                                                                           ),
                                                                           SizedBox(
@@ -7587,7 +7925,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Text(
                                                                               'Goals',
-                                                                              style: FlutterFlowTheme.of(context).bodyText2,
+                                                                              style: FlutterFlowTheme.of(context).bodySmall,
                                                                             ),
                                                                           ),
                                                                           Expanded(
@@ -7601,14 +7939,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     'Progress',
-                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                   ),
                                                                                 ),
                                                                                 Padding(
                                                                                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                   child: Text(
                                                                                     '4/10',
-                                                                                    style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                    style: FlutterFlowTheme.of(context).bodySmall,
                                                                                   ),
                                                                                 ),
                                                                               ],
@@ -7623,7 +7961,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                 width: MediaQuery.of(context).size.width * 0.38,
                                                                                 lineHeight: 8.0,
                                                                                 animation: true,
-                                                                                progressColor: FlutterFlowTheme.of(context).primaryColor,
+                                                                                progressColor: FlutterFlowTheme.of(context).primary,
                                                                                 backgroundColor: Color(0xFFE0E3E7),
                                                                                 barRadius: Radius.circular(8.0),
                                                                                 padding: EdgeInsets.zero,
@@ -7693,7 +8031,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               Text(
                                                                             'PROFILE',
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).title2,
+                                                                                FlutterFlowTheme.of(context).headlineMedium,
                                                                           ),
                                                                         ),
                                                                       ],
@@ -7735,32 +8073,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                           children: [
                                                                             TextSpan(
                                                                               text: ' A passionate ',
-                                                                              style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                              style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                     fontFamily: 'Outfit',
-                                                                                    color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                    color: FlutterFlowTheme.of(context).primary,
                                                                                     fontSize: 14.0,
                                                                                     fontWeight: FontWeight.normal,
                                                                                   ),
                                                                             ),
                                                                             TextSpan(
                                                                               text: 'Designer, Maker ',
-                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Outfit',
                                                                                     decoration: TextDecoration.underline,
                                                                                   ),
                                                                             ),
                                                                             TextSpan(
                                                                               text: 'and ',
-                                                                              style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                              style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                     fontFamily: 'Outfit',
-                                                                                    color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                    color: FlutterFlowTheme.of(context).primary,
                                                                                     fontSize: 14.0,
                                                                                     fontWeight: FontWeight.normal,
                                                                                   ),
                                                                             ),
                                                                             TextSpan(
                                                                               text: 'Builder ',
-                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                     fontFamily: 'Outfit',
                                                                                     decoration: TextDecoration.underline,
                                                                                   ),
@@ -7768,13 +8106,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             TextSpan(
                                                                               text: 'with an interest in pushing the quality of not just digital design, but physical products and spaces as well. ',
                                                                               style: TextStyle(
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                                 fontSize: 14.0,
                                                                               ),
                                                                             )
                                                                           ],
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .bodyText1
+                                                                              .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
                                                                                 fontSize: 18.0,
@@ -7799,24 +8137,24 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             TextSpan(
                                                                               text: ' I try to use my technical academic background, experience within startups and non governmental organizations, creativity, and my passion for technology and Life Long Learning to create ',
                                                                               style: TextStyle(
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                               ),
                                                                             ),
                                                                             TextSpan(
                                                                               text: 'unique approaches ',
                                                                               style: TextStyle(
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                               ),
                                                                             ),
                                                                             TextSpan(
                                                                               text: 'to the design we experience. Design, at its best, can Transform lives and Create Joy.',
                                                                               style: TextStyle(
-                                                                                color: FlutterFlowTheme.of(context).primaryColor,
+                                                                                color: FlutterFlowTheme.of(context).primary,
                                                                               ),
                                                                             )
                                                                           ],
                                                                           style: FlutterFlowTheme.of(context)
-                                                                              .bodyText1
+                                                                              .bodyMedium
                                                                               .override(
                                                                                 fontFamily: 'Outfit',
                                                                                 fontSize: 14.0,
@@ -7909,7 +8247,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 'PREVIOUS WORK',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .title2,
+                                                                    .headlineMedium,
                                                               ),
                                                             ),
                                                             SizedBox(
@@ -7960,24 +8298,38 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0),
                                                           child: InkWell(
                                                             onTap: () async {
+                                                              setState(() {
+                                                                FFAppState()
+                                                                        .projectitemview =
+                                                                    'PRODUCTS';
+                                                              });
                                                               await showModalBottomSheet(
                                                                 isScrollControlled:
                                                                     true,
                                                                 backgroundColor:
                                                                     Colors
                                                                         .transparent,
+                                                                barrierColor: Color(
+                                                                    0x00000000),
                                                                 enableDrag:
                                                                     false,
                                                                 context:
                                                                     context,
                                                                 builder:
-                                                                    (context) {
-                                                                  return Padding(
-                                                                    padding: MediaQuery.of(
+                                                                    (bottomSheetContext) {
+                                                                  return GestureDetector(
+                                                                    onTap: () => FocusScope.of(
                                                                             context)
-                                                                        .viewInsets,
+                                                                        .requestFocus(
+                                                                            _unfocusNode),
                                                                     child:
-                                                                        ViewProjectItemWidget(),
+                                                                        Padding(
+                                                                      padding: MediaQuery.of(
+                                                                              bottomSheetContext)
+                                                                          .viewInsets,
+                                                                      child:
+                                                                          ViewProjectItemWidget(),
+                                                                    ),
                                                                   );
                                                                 },
                                                               ).then((value) =>
@@ -8041,7 +8393,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Container(
                                                                               decoration: BoxDecoration(
-                                                                                color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                color: FlutterFlowTheme.of(context).tertiary,
                                                                                 borderRadius: BorderRadius.circular(0.0),
                                                                               ),
                                                                               child: Padding(
@@ -8051,14 +8403,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                     children: [
                                                                                       TextSpan(
                                                                                         text: 'PRODUCT',
-                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                               fontFamily: 'Outfit',
                                                                                               color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                               fontWeight: FontWeight.normal,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -8094,12 +8446,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             await showModalBottomSheet(
                                                                               isScrollControlled: true,
                                                                               backgroundColor: Colors.transparent,
+                                                                              barrierColor: Color(0x00000000),
                                                                               enableDrag: false,
                                                                               context: context,
-                                                                              builder: (context) {
-                                                                                return Padding(
-                                                                                  padding: MediaQuery.of(context).viewInsets,
-                                                                                  child: ViewProjectItemWidget(),
+                                                                              builder: (bottomSheetContext) {
+                                                                                return GestureDetector(
+                                                                                  onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                  child: Padding(
+                                                                                    padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                    child: ViewProjectItemWidget(),
+                                                                                  ),
                                                                                 );
                                                                               },
                                                                             ).then((value) =>
@@ -8211,7 +8567,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'CLIENTS',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8231,7 +8587,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'Spirit',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8251,7 +8607,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'Others',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8292,24 +8648,38 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0),
                                                           child: InkWell(
                                                             onTap: () async {
+                                                              setState(() {
+                                                                FFAppState()
+                                                                        .projectitemview =
+                                                                    'BRANDING';
+                                                              });
                                                               await showModalBottomSheet(
                                                                 isScrollControlled:
                                                                     true,
                                                                 backgroundColor:
                                                                     Colors
                                                                         .transparent,
+                                                                barrierColor: Color(
+                                                                    0x00000000),
                                                                 enableDrag:
                                                                     false,
                                                                 context:
                                                                     context,
                                                                 builder:
-                                                                    (context) {
-                                                                  return Padding(
-                                                                    padding: MediaQuery.of(
+                                                                    (bottomSheetContext) {
+                                                                  return GestureDetector(
+                                                                    onTap: () => FocusScope.of(
                                                                             context)
-                                                                        .viewInsets,
+                                                                        .requestFocus(
+                                                                            _unfocusNode),
                                                                     child:
-                                                                        ViewProjectItemWidget(),
+                                                                        Padding(
+                                                                      padding: MediaQuery.of(
+                                                                              bottomSheetContext)
+                                                                          .viewInsets,
+                                                                      child:
+                                                                          ViewProjectItemWidget(),
+                                                                    ),
                                                                   );
                                                                 },
                                                               ).then((value) =>
@@ -8373,7 +8743,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Container(
                                                                               decoration: BoxDecoration(
-                                                                                color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                color: FlutterFlowTheme.of(context).tertiary,
                                                                                 borderRadius: BorderRadius.circular(0.0),
                                                                               ),
                                                                               child: Padding(
@@ -8383,14 +8753,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                     children: [
                                                                                       TextSpan(
                                                                                         text: 'BRANDING',
-                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                               fontFamily: 'Outfit',
                                                                                               color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                               fontWeight: FontWeight.normal,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -8426,12 +8796,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             await showModalBottomSheet(
                                                                               isScrollControlled: true,
                                                                               backgroundColor: Colors.transparent,
+                                                                              barrierColor: Color(0x00000000),
                                                                               enableDrag: false,
                                                                               context: context,
-                                                                              builder: (context) {
-                                                                                return Padding(
-                                                                                  padding: MediaQuery.of(context).viewInsets,
-                                                                                  child: ViewProjectItemWidget(),
+                                                                              builder: (bottomSheetContext) {
+                                                                                return GestureDetector(
+                                                                                  onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                  child: Padding(
+                                                                                    padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                    child: ViewProjectItemWidget(),
+                                                                                  ),
                                                                                 );
                                                                               },
                                                                             ).then((value) =>
@@ -8524,13 +8898,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     children: [
                                                                                                       TextSpan(
                                                                                                         text: 'Branding',
-                                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                               fontFamily: 'Outfit',
                                                                                                               color: FlutterFlowTheme.of(context).secondaryText,
                                                                                                             ),
                                                                                                       )
                                                                                                     ],
-                                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                                   ),
                                                                                                 ),
                                                                                               ),
@@ -8572,7 +8946,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'CLIENTS',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8592,7 +8966,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'Spirit',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8612,7 +8986,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'MrFixit',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8653,24 +9027,38 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       0.0),
                                                           child: InkWell(
                                                             onTap: () async {
+                                                              setState(() {
+                                                                FFAppState()
+                                                                        .projectitemview =
+                                                                    'UX';
+                                                              });
                                                               await showModalBottomSheet(
                                                                 isScrollControlled:
                                                                     true,
                                                                 backgroundColor:
                                                                     Colors
                                                                         .transparent,
+                                                                barrierColor: Color(
+                                                                    0x00000000),
                                                                 enableDrag:
                                                                     false,
                                                                 context:
                                                                     context,
                                                                 builder:
-                                                                    (context) {
-                                                                  return Padding(
-                                                                    padding: MediaQuery.of(
+                                                                    (bottomSheetContext) {
+                                                                  return GestureDetector(
+                                                                    onTap: () => FocusScope.of(
                                                                             context)
-                                                                        .viewInsets,
+                                                                        .requestFocus(
+                                                                            _unfocusNode),
                                                                     child:
-                                                                        ViewProjectItemWidget(),
+                                                                        Padding(
+                                                                      padding: MediaQuery.of(
+                                                                              bottomSheetContext)
+                                                                          .viewInsets,
+                                                                      child:
+                                                                          ViewProjectItemWidget(),
+                                                                    ),
                                                                   );
                                                                 },
                                                               ).then((value) =>
@@ -8730,7 +9118,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             child:
                                                                                 Container(
                                                                               decoration: BoxDecoration(
-                                                                                color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                                color: FlutterFlowTheme.of(context).tertiary,
                                                                                 borderRadius: BorderRadius.circular(0.0),
                                                                               ),
                                                                               child: Padding(
@@ -8739,15 +9127,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                   text: TextSpan(
                                                                                     children: [
                                                                                       TextSpan(
-                                                                                        text: 'UX / MOBILE',
-                                                                                        style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                        text: 'UX / MOBILE / WEB',
+                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                               fontFamily: 'Outfit',
                                                                                               color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                               fontWeight: FontWeight.normal,
                                                                                             ),
                                                                                       )
                                                                                     ],
-                                                                                    style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                   ),
                                                                                 ),
                                                                               ),
@@ -8783,12 +9171,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             await showModalBottomSheet(
                                                                               isScrollControlled: true,
                                                                               backgroundColor: Colors.transparent,
+                                                                              barrierColor: Color(0x00000000),
                                                                               enableDrag: false,
                                                                               context: context,
-                                                                              builder: (context) {
-                                                                                return Padding(
-                                                                                  padding: MediaQuery.of(context).viewInsets,
-                                                                                  child: ViewProjectItemWidget(),
+                                                                              builder: (bottomSheetContext) {
+                                                                                return GestureDetector(
+                                                                                  onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                  child: Padding(
+                                                                                    padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                    child: ViewProjectItemWidget(),
+                                                                                  ),
                                                                                 );
                                                                               },
                                                                             ).then((value) =>
@@ -8898,7 +9290,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
                                                                                                             child: Text(
                                                                                                               'CLIENTS',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8918,7 +9310,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'Spirit',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8938,7 +9330,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
                                                                                                             child: Text(
                                                                                                               'MrFixit',
-                                                                                                              style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Outfit',
                                                                                                                     color: Colors.white,
                                                                                                                   ),
@@ -8977,362 +9369,394 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       2.0,
                                                                       2.0,
                                                                       0.0),
-                                                          child: Container(
-                                                            constraints:
-                                                                BoxConstraints(
-                                                              maxWidth: 500.0,
-                                                            ),
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              boxShadow: [
-                                                                BoxShadow(
-                                                                  blurRadius:
-                                                                      4.0,
-                                                                  color: Color(
-                                                                      0x34090F13),
-                                                                  offset:
-                                                                      Offset(
-                                                                          0.0,
-                                                                          2.0),
-                                                                )
-                                                              ],
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          0.0),
-                                                            ),
-                                                            child: Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          22.0,
-                                                                          26.0,
-                                                                          22.0,
-                                                                          26.0),
-                                                              child:
-                                                                  SingleChildScrollView(
-                                                                child: Column(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .start,
-                                                                  children: [
-                                                                    Row(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      children: [
+                                                          child: InkWell(
+                                                            onTap: () async {
+                                                              setState(() {
+                                                                FFAppState()
+                                                                        .projectitemview =
+                                                                    'PRODUCTS';
+                                                              });
+                                                              await showModalBottomSheet(
+                                                                isScrollControlled:
+                                                                    true,
+                                                                backgroundColor:
+                                                                    Colors
+                                                                        .transparent,
+                                                                barrierColor: Color(
+                                                                    0x00000000),
+                                                                enableDrag:
+                                                                    false,
+                                                                context:
+                                                                    context,
+                                                                builder:
+                                                                    (bottomSheetContext) {
+                                                                  return GestureDetector(
+                                                                    onTap: () => FocusScope.of(
+                                                                            context)
+                                                                        .requestFocus(
+                                                                            _unfocusNode),
+                                                                    child:
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              0.0,
-                                                                              0.0,
-                                                                              12.0),
+                                                                      padding: MediaQuery.of(
+                                                                              bottomSheetContext)
+                                                                          .viewInsets,
+                                                                      child:
+                                                                          ViewProjectItemWidget(),
+                                                                    ),
+                                                                  );
+                                                                },
+                                                              ).then((value) =>
+                                                                  setState(
+                                                                      () {}));
+                                                            },
+                                                            child: Container(
+                                                              constraints:
+                                                                  BoxConstraints(
+                                                                maxWidth: 500.0,
+                                                              ),
+                                                              decoration:
+                                                                  BoxDecoration(
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondaryBackground,
+                                                                boxShadow: [
+                                                                  BoxShadow(
+                                                                    blurRadius:
+                                                                        4.0,
+                                                                    color: Color(
+                                                                        0x34090F13),
+                                                                    offset:
+                                                                        Offset(
+                                                                            0.0,
+                                                                            2.0),
+                                                                  )
+                                                                ],
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .circular(
+                                                                            0.0),
+                                                              ),
+                                                              child: Padding(
+                                                                padding: EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        22.0,
+                                                                        26.0,
+                                                                        22.0,
+                                                                        26.0),
+                                                                child:
+                                                                    SingleChildScrollView(
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Row(
+                                                                        mainAxisSize:
+                                                                            MainAxisSize.max,
+                                                                        children: [
+                                                                          Padding(
+                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                                0.0,
+                                                                                0.0,
+                                                                                0.0,
+                                                                                12.0),
+                                                                            child:
+                                                                                Container(
+                                                                              decoration: BoxDecoration(
+                                                                                color: FlutterFlowTheme.of(context).tertiary,
+                                                                                borderRadius: BorderRadius.circular(0.0),
+                                                                              ),
+                                                                              child: Padding(
+                                                                                padding: EdgeInsetsDirectional.fromSTEB(9.0, 4.0, 9.0, 4.0),
+                                                                                child: RichText(
+                                                                                  text: TextSpan(
+                                                                                    children: [
+                                                                                      TextSpan(
+                                                                                        text: '3D',
+                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                              fontFamily: 'Outfit',
+                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                              fontWeight: FontWeight.normal,
+                                                                                            ),
+                                                                                      )
+                                                                                    ],
+                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                  ),
+                                                                                ),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ],
+                                                                      ),
+                                                                      SizedBox(
+                                                                        width:
+                                                                            50.0,
+                                                                        child:
+                                                                            Divider(
+                                                                          height:
+                                                                              2.0,
+                                                                          thickness:
+                                                                              2.0,
+                                                                          endIndent:
+                                                                              2.0,
+                                                                          color:
+                                                                              Color(0xA495A1AC),
+                                                                        ),
+                                                                      ),
+                                                                      Padding(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            12.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            InkWell(
+                                                                          onTap:
+                                                                              () async {
+                                                                            await showModalBottomSheet(
+                                                                              isScrollControlled: true,
+                                                                              backgroundColor: Colors.transparent,
+                                                                              barrierColor: Color(0x00000000),
+                                                                              enableDrag: false,
+                                                                              context: context,
+                                                                              builder: (bottomSheetContext) {
+                                                                                return GestureDetector(
+                                                                                  onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+                                                                                  child: Padding(
+                                                                                    padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                                    child: ViewProjectItemWidget(),
+                                                                                  ),
+                                                                                );
+                                                                              },
+                                                                            ).then((value) =>
+                                                                                setState(() {}));
+                                                                          },
                                                                           child:
                                                                               Container(
+                                                                            height:
+                                                                                400.0,
+                                                                            constraints:
+                                                                                BoxConstraints(
+                                                                              maxWidth: 500.0,
+                                                                            ),
                                                                             decoration:
                                                                                 BoxDecoration(
-                                                                              color: FlutterFlowTheme.of(context).tertiaryColor,
+                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
+                                                                              image: DecorationImage(
+                                                                                fit: BoxFit.fitHeight,
+                                                                                image: Image.asset(
+                                                                                  'assets/images/top_clean.jpg',
+                                                                                ).image,
+                                                                              ),
+                                                                              boxShadow: [
+                                                                                BoxShadow(
+                                                                                  blurRadius: 5.0,
+                                                                                  color: Color(0x2B202529),
+                                                                                  offset: Offset(0.0, 3.0),
+                                                                                )
+                                                                              ],
                                                                               borderRadius: BorderRadius.circular(0.0),
                                                                             ),
                                                                             child:
-                                                                                Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(9.0, 4.0, 9.0, 4.0),
-                                                                              child: RichText(
-                                                                                text: TextSpan(
-                                                                                  children: [
-                                                                                    TextSpan(
-                                                                                      text: '3D',
-                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
-                                                                                            fontFamily: 'Outfit',
-                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                            fontWeight: FontWeight.normal,
+                                                                                Stack(
+                                                                              children: [
+                                                                                Container(
+                                                                                  width: double.infinity,
+                                                                                  height: 500.0,
+                                                                                  child: Stack(
+                                                                                    children: [
+                                                                                      PageView(
+                                                                                        controller: _model.threeDPageViewController2 ??= PageController(initialPage: 0),
+                                                                                        scrollDirection: Axis.horizontal,
+                                                                                        children: [
+                                                                                          Image.asset(
+                                                                                            'assets/images/top_clean.jpg',
+                                                                                            width: 100.0,
+                                                                                            fit: BoxFit.cover,
                                                                                           ),
-                                                                                    )
-                                                                                  ],
-                                                                                  style: FlutterFlowTheme.of(context).bodyText1,
-                                                                                ),
-                                                                              ),
-                                                                            ),
-                                                                          ),
-                                                                        ),
-                                                                      ],
-                                                                    ),
-                                                                    SizedBox(
-                                                                      width:
-                                                                          50.0,
-                                                                      child:
-                                                                          Divider(
-                                                                        height:
-                                                                            2.0,
-                                                                        thickness:
-                                                                            2.0,
-                                                                        endIndent:
-                                                                            2.0,
-                                                                        color: Color(
-                                                                            0xA495A1AC),
-                                                                      ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
-                                                                          12.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          InkWell(
-                                                                        onTap:
-                                                                            () async {
-                                                                          await showModalBottomSheet(
-                                                                            isScrollControlled:
-                                                                                true,
-                                                                            backgroundColor:
-                                                                                Colors.transparent,
-                                                                            enableDrag:
-                                                                                false,
-                                                                            context:
-                                                                                context,
-                                                                            builder:
-                                                                                (context) {
-                                                                              return Padding(
-                                                                                padding: MediaQuery.of(context).viewInsets,
-                                                                                child: ViewProjectItemWidget(),
-                                                                              );
-                                                                            },
-                                                                          ).then((value) =>
-                                                                              setState(() {}));
-                                                                        },
-                                                                        child:
-                                                                            Container(
-                                                                          height:
-                                                                              400.0,
-                                                                          constraints:
-                                                                              BoxConstraints(
-                                                                            maxWidth:
-                                                                                500.0,
-                                                                          ),
-                                                                          decoration:
-                                                                              BoxDecoration(
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            image:
-                                                                                DecorationImage(
-                                                                              fit: BoxFit.fitHeight,
-                                                                              image: Image.asset(
-                                                                                'assets/images/top_clean.jpg',
-                                                                              ).image,
-                                                                            ),
-                                                                            boxShadow: [
-                                                                              BoxShadow(
-                                                                                blurRadius: 5.0,
-                                                                                color: Color(0x2B202529),
-                                                                                offset: Offset(0.0, 3.0),
-                                                                              )
-                                                                            ],
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(0.0),
-                                                                          ),
-                                                                          child:
-                                                                              Stack(
-                                                                            children: [
-                                                                              Container(
-                                                                                width: double.infinity,
-                                                                                height: 500.0,
-                                                                                child: Stack(
-                                                                                  children: [
-                                                                                    PageView(
-                                                                                      controller: _model.threeDPageViewController2 ??= PageController(initialPage: 0),
-                                                                                      scrollDirection: Axis.horizontal,
-                                                                                      children: [
-                                                                                        Image.asset(
-                                                                                          'assets/images/top_clean.jpg',
-                                                                                          width: 100.0,
-                                                                                          fit: BoxFit.cover,
-                                                                                        ),
-                                                                                        Image.asset(
-                                                                                          'assets/images/stand2.png',
-                                                                                          width: 100.0,
-                                                                                          fit: BoxFit.cover,
-                                                                                        ),
-                                                                                        Image.asset(
-                                                                                          'assets/images/walkway_chairs_hangingplants_vases.jpg',
-                                                                                          width: 100.0,
-                                                                                          fit: BoxFit.cover,
-                                                                                        ),
-                                                                                      ],
-                                                                                    ),
-                                                                                    Align(
-                                                                                      alignment: AlignmentDirectional(0.0, 1.0),
-                                                                                      child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
-                                                                                        child: smooth_page_indicator.SmoothPageIndicator(
-                                                                                          controller: _model.threeDPageViewController2 ??= PageController(initialPage: 0),
-                                                                                          count: 3,
-                                                                                          axisDirection: Axis.horizontal,
-                                                                                          onDotClicked: (i) {
-                                                                                            _model.threeDPageViewController2!.animateToPage(
-                                                                                              i,
-                                                                                              duration: Duration(milliseconds: 500),
-                                                                                              curve: Curves.ease,
-                                                                                            );
-                                                                                          },
-                                                                                          effect: smooth_page_indicator.ExpandingDotsEffect(
-                                                                                            expansionFactor: 2.0,
-                                                                                            spacing: 8.0,
-                                                                                            radius: 16.0,
-                                                                                            dotWidth: 16.0,
-                                                                                            dotHeight: 16.0,
-                                                                                            dotColor: Color(0xFF9E9E9E),
-                                                                                            activeDotColor: Color(0xFF3F51B5),
-                                                                                            paintStyle: PaintingStyle.fill,
+                                                                                          Image.asset(
+                                                                                            'assets/images/stand2.png',
+                                                                                            width: 100.0,
+                                                                                            fit: BoxFit.cover,
+                                                                                          ),
+                                                                                          Image.asset(
+                                                                                            'assets/images/walkway_chairs_hangingplants_vases.jpg',
+                                                                                            width: 100.0,
+                                                                                            fit: BoxFit.cover,
+                                                                                          ),
+                                                                                        ],
+                                                                                      ),
+                                                                                      Align(
+                                                                                        alignment: AlignmentDirectional(0.0, 1.0),
+                                                                                        child: Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                                                                          child: smooth_page_indicator.SmoothPageIndicator(
+                                                                                            controller: _model.threeDPageViewController2 ??= PageController(initialPage: 0),
+                                                                                            count: 3,
+                                                                                            axisDirection: Axis.horizontal,
+                                                                                            onDotClicked: (i) {
+                                                                                              _model.threeDPageViewController2!.animateToPage(
+                                                                                                i,
+                                                                                                duration: Duration(milliseconds: 500),
+                                                                                                curve: Curves.ease,
+                                                                                              );
+                                                                                            },
+                                                                                            effect: smooth_page_indicator.ExpandingDotsEffect(
+                                                                                              expansionFactor: 2.0,
+                                                                                              spacing: 8.0,
+                                                                                              radius: 16.0,
+                                                                                              dotWidth: 16.0,
+                                                                                              dotHeight: 16.0,
+                                                                                              dotColor: Color(0xFF9E9E9E),
+                                                                                              activeDotColor: Color(0xFF3F51B5),
+                                                                                              paintStyle: PaintingStyle.fill,
+                                                                                            ),
                                                                                           ),
                                                                                         ),
                                                                                       ),
-                                                                                    ),
-                                                                                  ],
+                                                                                    ],
+                                                                                  ),
                                                                                 ),
-                                                                              ),
-                                                                              Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
-                                                                                child: Column(
-                                                                                  mainAxisSize: MainAxisSize.max,
-                                                                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                                                  children: [
-                                                                                    Row(
-                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                      children: [
-                                                                                        Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
-                                                                                          child: Container(
-                                                                                            decoration: BoxDecoration(
-                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                              borderRadius: BorderRadius.circular(0.0),
-                                                                                            ),
-                                                                                            child: Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 4.0),
-                                                                                              child: RichText(
-                                                                                                text: TextSpan(
-                                                                                                  children: [
-                                                                                                    TextSpan(
-                                                                                                      text: '3D',
-                                                                                                      style: FlutterFlowTheme.of(context).subtitle2.override(
-                                                                                                            fontFamily: 'Outfit',
-                                                                                                            color: FlutterFlowTheme.of(context).secondaryText,
-                                                                                                          ),
-                                                                                                    )
-                                                                                                  ],
-                                                                                                  style: FlutterFlowTheme.of(context).bodyText1,
-                                                                                                ),
-                                                                                              ),
-                                                                                            ),
-                                                                                          ),
-                                                                                        ),
-                                                                                      ],
-                                                                                    ),
-                                                                                    ClipRRect(
-                                                                                      child: BackdropFilter(
-                                                                                        filter: ImageFilter.blur(
-                                                                                          sigmaX: 2.0,
-                                                                                          sigmaY: 3.0,
-                                                                                        ),
-                                                                                        child: Column(
-                                                                                          mainAxisSize: MainAxisSize.max,
-                                                                                          children: [
-                                                                                            Container(
-                                                                                              width: double.infinity,
+                                                                                Padding(
+                                                                                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                                                                                  child: Column(
+                                                                                    mainAxisSize: MainAxisSize.max,
+                                                                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                                                    children: [
+                                                                                      Row(
+                                                                                        mainAxisSize: MainAxisSize.max,
+                                                                                        children: [
+                                                                                          Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
+                                                                                            child: Container(
                                                                                               decoration: BoxDecoration(
-                                                                                                color: Color(0x6CFFFFFF),
+                                                                                                color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                                 borderRadius: BorderRadius.circular(0.0),
                                                                                               ),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
-                                                                                                child: Wrap(
-                                                                                                  spacing: 0.0,
-                                                                                                  runSpacing: 0.0,
-                                                                                                  alignment: WrapAlignment.start,
-                                                                                                  crossAxisAlignment: WrapCrossAlignment.start,
-                                                                                                  direction: Axis.horizontal,
-                                                                                                  runAlignment: WrapAlignment.start,
-                                                                                                  verticalDirection: VerticalDirection.down,
-                                                                                                  clipBehavior: Clip.none,
-                                                                                                  children: [
-                                                                                                    Row(
-                                                                                                      mainAxisSize: MainAxisSize.max,
-                                                                                                      children: [
-                                                                                                        Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
-                                                                                                          child: Text(
-                                                                                                            'CLIENTS',
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1.override(
-                                                                                                                  fontFamily: 'Outfit',
-                                                                                                                  color: Colors.white,
-                                                                                                                ),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ],
-                                                                                                    ),
-                                                                                                    Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 0.0, 0.0),
-                                                                                                      child: Container(
-                                                                                                        decoration: BoxDecoration(
-                                                                                                          border: Border.all(
-                                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                        child: Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
-                                                                                                          child: Text(
-                                                                                                            'Spirit',
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1.override(
-                                                                                                                  fontFamily: 'Outfit',
-                                                                                                                  color: Colors.white,
-                                                                                                                ),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    ),
-                                                                                                    Padding(
-                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 0.0, 0.0),
-                                                                                                      child: Container(
-                                                                                                        decoration: BoxDecoration(
-                                                                                                          border: Border.all(
-                                                                                                            color: FlutterFlowTheme.of(context).primaryBackground,
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                        child: Padding(
-                                                                                                          padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
-                                                                                                          child: Text(
-                                                                                                            'Others',
-                                                                                                            style: FlutterFlowTheme.of(context).bodyText1.override(
-                                                                                                                  fontFamily: 'Outfit',
-                                                                                                                  color: Colors.white,
-                                                                                                                ),
-                                                                                                          ),
-                                                                                                        ),
-                                                                                                      ),
-                                                                                                    ),
-                                                                                                  ],
+                                                                                                padding: EdgeInsetsDirectional.fromSTEB(12.0, 4.0, 12.0, 4.0),
+                                                                                                child: RichText(
+                                                                                                  text: TextSpan(
+                                                                                                    children: [
+                                                                                                      TextSpan(
+                                                                                                        text: '3D',
+                                                                                                        style: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                              fontFamily: 'Outfit',
+                                                                                                              color: FlutterFlowTheme.of(context).secondaryText,
+                                                                                                            ),
+                                                                                                      )
+                                                                                                    ],
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium,
+                                                                                                  ),
                                                                                                 ),
                                                                                               ),
                                                                                             ),
-                                                                                          ],
+                                                                                          ),
+                                                                                        ],
+                                                                                      ),
+                                                                                      ClipRRect(
+                                                                                        child: BackdropFilter(
+                                                                                          filter: ImageFilter.blur(
+                                                                                            sigmaX: 2.0,
+                                                                                            sigmaY: 3.0,
+                                                                                          ),
+                                                                                          child: Column(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            children: [
+                                                                                              Container(
+                                                                                                width: double.infinity,
+                                                                                                decoration: BoxDecoration(
+                                                                                                  color: Color(0x6CFFFFFF),
+                                                                                                  borderRadius: BorderRadius.circular(0.0),
+                                                                                                ),
+                                                                                                child: Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                                                                                                  child: Wrap(
+                                                                                                    spacing: 0.0,
+                                                                                                    runSpacing: 0.0,
+                                                                                                    alignment: WrapAlignment.start,
+                                                                                                    crossAxisAlignment: WrapCrossAlignment.start,
+                                                                                                    direction: Axis.horizontal,
+                                                                                                    runAlignment: WrapAlignment.start,
+                                                                                                    verticalDirection: VerticalDirection.down,
+                                                                                                    clipBehavior: Clip.none,
+                                                                                                    children: [
+                                                                                                      Row(
+                                                                                                        mainAxisSize: MainAxisSize.max,
+                                                                                                        children: [
+                                                                                                          Padding(
+                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 0.0),
+                                                                                                            child: Text(
+                                                                                                              'CLIENTS',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                    fontFamily: 'Outfit',
+                                                                                                                    color: Colors.white,
+                                                                                                                  ),
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ],
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 0.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            border: Border.all(
+                                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                          child: Padding(
+                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
+                                                                                                            child: Text(
+                                                                                                              'Spirit',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                    fontFamily: 'Outfit',
+                                                                                                                    color: Colors.white,
+                                                                                                                  ),
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                      Padding(
+                                                                                                        padding: EdgeInsetsDirectional.fromSTEB(6.0, 0.0, 0.0, 0.0),
+                                                                                                        child: Container(
+                                                                                                          decoration: BoxDecoration(
+                                                                                                            border: Border.all(
+                                                                                                              color: FlutterFlowTheme.of(context).primaryBackground,
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                          child: Padding(
+                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 4.0),
+                                                                                                            child: Text(
+                                                                                                              'Others',
+                                                                                                              style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                                    fontFamily: 'Outfit',
+                                                                                                                    color: Colors.white,
+                                                                                                                  ),
+                                                                                                            ),
+                                                                                                          ),
+                                                                                                        ),
+                                                                                                      ),
+                                                                                                    ],
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
                                                                                         ),
                                                                                       ),
-                                                                                    ),
-                                                                                  ],
+                                                                                    ],
+                                                                                  ),
                                                                                 ),
-                                                                              ),
-                                                                            ],
+                                                                              ],
+                                                                            ),
                                                                           ),
                                                                         ),
                                                                       ),
-                                                                    ),
-                                                                  ],
+                                                                    ],
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),
@@ -9383,7 +9807,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           icon: Icon(
                                             Icons.cancel_sharp,
                                             color: FlutterFlowTheme.of(context)
-                                                .tertiaryColor,
+                                                .tertiary,
                                             size: 30.0,
                                           ),
                                           onPressed: () async {
@@ -9467,7 +9891,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     'Home'
                                                                 ? FlutterFlowTheme.of(
                                                                         context)
-                                                                    .tertiaryColor
+                                                                    .tertiary
                                                                 : FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryBackground,
@@ -9485,7 +9909,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'Home'
                                                           ? FlutterFlowTheme.of(
                                                                   context)
-                                                              .primaryColor
+                                                              .primary
                                                           : FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
@@ -9504,7 +9928,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2
+                                                                .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
@@ -9575,7 +9999,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ? FlutterFlowTheme
                                                                       .of(
                                                                           context)
-                                                                  .tertiaryColor
+                                                                  .tertiary
                                                               : FlutterFlowTheme
                                                                       .of(context)
                                                                   .primaryBackground,
@@ -9589,7 +10013,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'Projects'
                                                           ? FlutterFlowTheme.of(
                                                                   context)
-                                                              .primaryColor
+                                                              .primary
                                                           : FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
@@ -9608,7 +10032,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2,
+                                                                .titleSmall,
                                                       ),
                                                     ),
                                                   ],
@@ -9672,7 +10096,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ? FlutterFlowTheme
                                                                       .of(
                                                                           context)
-                                                                  .tertiaryColor
+                                                                  .tertiary
                                                               : FlutterFlowTheme
                                                                       .of(context)
                                                                   .primaryBackground,
@@ -9686,7 +10110,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               'AboutMe'
                                                           ? FlutterFlowTheme.of(
                                                                   context)
-                                                              .primaryColor
+                                                              .primary
                                                           : FlutterFlowTheme.of(
                                                                   context)
                                                               .secondaryText,
@@ -9705,7 +10129,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .subtitle2
+                                                                .titleSmall
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
@@ -9773,7 +10197,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     0.0, 12.0, 0.0, 6.0),
                                 child: Text(
                                   'PROFILE',
-                                  style: FlutterFlowTheme.of(context).title2,
+                                  style: FlutterFlowTheme.of(context)
+                                      .headlineMedium,
                                 ),
                               ),
                             ],
@@ -9804,11 +10229,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   TextSpan(
                                     text: ' A passionate ',
                                     style: FlutterFlowTheme.of(context)
-                                        .subtitle2
+                                        .titleSmall
                                         .override(
                                           fontFamily: 'Outfit',
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryColor,
+                                              .primary,
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
                                         ),
@@ -9816,7 +10241,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   TextSpan(
                                     text: 'Designer, Maker ',
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily: 'Outfit',
                                           decoration: TextDecoration.underline,
@@ -9825,11 +10250,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   TextSpan(
                                     text: 'and ',
                                     style: FlutterFlowTheme.of(context)
-                                        .subtitle2
+                                        .titleSmall
                                         .override(
                                           fontFamily: 'Outfit',
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryColor,
+                                              .primary,
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.normal,
                                         ),
@@ -9837,7 +10262,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   TextSpan(
                                     text: 'Builder ',
                                     style: FlutterFlowTheme.of(context)
-                                        .bodyText1
+                                        .bodyMedium
                                         .override(
                                           fontFamily: 'Outfit',
                                           decoration: TextDecoration.underline,
@@ -9847,14 +10272,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     text:
                                         'with an interest in pushing the quality of not just digital design, but physical products and spaces as well. ',
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                       fontSize: 14.0,
                                     ),
                                   )
                                 ],
                                 style: FlutterFlowTheme.of(context)
-                                    .bodyText1
+                                    .bodyMedium
                                     .override(
                                       fontFamily: 'Outfit',
                                       fontSize: 18.0,
@@ -9874,28 +10299,28 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     text:
                                         ' I try to use my technical academic background, experience within startups and non governmental organizations, creativity, and my passion for technology and Life Long Learning to create ',
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                   TextSpan(
                                     text: 'unique approaches ',
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                     ),
                                   ),
                                   TextSpan(
                                     text:
                                         'to the design we experience. Design, at its best, can Transform lives and Create Joy.',
                                     style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
                                     ),
                                   )
                                 ],
                                 style: FlutterFlowTheme.of(context)
-                                    .bodyText1
+                                    .bodyMedium
                                     .override(
                                       fontFamily: 'Outfit',
                                       fontSize: 14.0,

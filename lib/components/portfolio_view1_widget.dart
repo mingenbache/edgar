@@ -215,7 +215,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                             textStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -337,7 +337,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               'Spirit Motorcycles assembles motorcycles in Kenya, based on a highly customer centric design process. Spirit Motorcycles therefore offers multiple design options across multiple products. Work done includes Brand name ideation, logo and visual motifs, promotional design, merchandise design, event setup design, and most importantly, industrial design for CAM.',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText1
+                                                                  .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Poppins',
@@ -393,7 +393,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                             textStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -523,7 +523,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                                 'Spirit Motorcycles assembles motorcycles in Kenya, based on a highly customer centric design process. Spirit Motorcycles therefore offers multiple design options across multiple products. Work done includes Brand name ideation, logo and visual motifs, promotional design, merchandise design, event setup design, and most importantly, industrial design for CAM.',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText1
+                                                                    .bodyMedium
                                                                     .override(
                                                                       fontFamily:
                                                                           'Poppins',
@@ -580,7 +580,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                             textStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -709,7 +709,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                                 'Fitness',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -736,7 +736,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               'Launching A Brand',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .subtitle1
+                                                                  .titleMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -762,7 +762,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               '216 Members',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2
+                                                                  .bodySmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -864,7 +864,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                                 'Fitness',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -891,7 +891,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               'Product Design',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .subtitle1
+                                                                  .titleMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -917,7 +917,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               '216 Members',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2
+                                                                  .bodySmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1019,7 +1019,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                                 'Fitness',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1046,7 +1046,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               'Customer Engagement',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .subtitle1
+                                                                  .titleMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1072,7 +1072,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               '216 Members',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2
+                                                                  .bodySmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1174,7 +1174,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                                 'Health',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyText2
+                                                                    .bodySmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1201,7 +1201,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               'Dads for Gas-free Groceries',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .subtitle1
+                                                                  .titleMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1227,7 +1227,7 @@ class _PortfolioView1WidgetState extends State<PortfolioView1Widget> {
                                                               '352 Members',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText2
+                                                                  .bodySmall
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',

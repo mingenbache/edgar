@@ -54,12 +54,12 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
 
-    return Scaffold(
-      key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+        body: SafeArea(
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -137,7 +137,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                       child: Text(
                                         'PREVIOUS WORK',
                                         style: FlutterFlowTheme.of(context)
-                                            .subtitle1,
+                                            .titleMedium,
                                       ),
                                     ),
                                   ],
@@ -178,7 +178,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     text: 'All',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -189,7 +189,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                               ),
                                             ),
                                           ),
@@ -219,7 +219,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     text: 'Product',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -230,7 +230,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                               ),
                                             ),
                                           ),
@@ -260,7 +260,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     text: 'Branding',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -271,7 +271,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1,
+                                                        .bodyMedium,
                                               ),
                                             ),
                                           ),
@@ -301,7 +301,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     text: 'UX / Mobile',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -312,7 +312,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -348,7 +348,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     text: '3D',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -359,7 +359,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -453,7 +453,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: 'Product',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -465,7 +465,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -538,7 +538,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'CLIENTS',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -581,7 +581,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Spirit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -624,7 +624,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Others',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -718,7 +718,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                     'Branding',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -730,7 +730,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -803,7 +803,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'CLIENTS',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -846,7 +846,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Spirit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -889,7 +889,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'MrFixit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -982,7 +982,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: 'ux',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -994,7 +994,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -1067,7 +1067,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'CLIENTS',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1110,7 +1110,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Spirit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1153,7 +1153,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'MrFixit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1246,7 +1246,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: '3D',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1258,7 +1258,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -1331,7 +1331,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'CLIENTS',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1374,7 +1374,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Spirit',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1417,7 +1417,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       'Others',
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .bodyText1
+                                                                          .bodyMedium
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
@@ -1512,7 +1512,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             'Judy Garland',
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .title2
+                                                                .headlineMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
@@ -1532,7 +1532,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                               'Founder, CEO',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .subtitle1
+                                                                  .titleMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1553,7 +1553,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                               'Founded her own agency and works with creatives from around the globe for fortune 500 companies.',
                                                               style: FlutterFlowTheme
                                                                       .of(context)
-                                                                  .bodyText1
+                                                                  .bodyMedium
                                                                   .override(
                                                                     fontFamily:
                                                                         'Outfit',
@@ -1580,7 +1580,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                       .facebook,
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .primaryColor,
+                                                                      .primary,
                                                                   size: 24.0,
                                                                 ),
                                                                 Padding(
@@ -1595,7 +1595,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                         .twitter,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primaryColor,
+                                                                        .primary,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),
@@ -1611,7 +1611,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                         .linkedin,
                                                                     color: FlutterFlowTheme.of(
                                                                             context)
-                                                                        .primaryColor,
+                                                                        .primary,
                                                                     size: 24.0,
                                                                   ),
                                                                 ),
@@ -1667,7 +1667,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                     'PREVIOUS WORK',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .title2,
+                                                        .headlineMedium,
                                                   ),
                                                 ),
                                               ],
@@ -1722,7 +1722,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: 'All',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1734,7 +1734,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -1773,7 +1773,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: 'Product',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1785,7 +1785,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -1825,7 +1825,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                     'Branding',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1837,7 +1837,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1,
+                                                                .bodyMedium,
                                                           ),
                                                         ),
                                                       ),
@@ -1877,7 +1877,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                     'UX / Mobile',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1889,7 +1889,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1
+                                                                .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
@@ -1935,7 +1935,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                                 text: '3D',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
-                                                                    .subtitle2
+                                                                    .titleSmall
                                                                     .override(
                                                                       fontFamily:
                                                                           'Outfit',
@@ -1947,7 +1947,7 @@ class _PortfolioWidgetState extends State<PortfolioWidget>
                                                             ],
                                                             style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .bodyText1
+                                                                .bodyMedium
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',

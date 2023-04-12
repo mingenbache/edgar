@@ -114,7 +114,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                     color: valueOrDefault<Color>(
                                       FFAppState().currentPage == 'Home'
                                           ? FlutterFlowTheme.of(context)
-                                              .tertiaryColor
+                                              .tertiary
                                           : FlutterFlowTheme.of(context)
                                               .primaryBackground,
                                       FlutterFlowTheme.of(context)
@@ -126,7 +126,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                               Icon(
                                 Icons.home_filled,
                                 color: FFAppState().currentPage == 'Home'
-                                    ? FlutterFlowTheme.of(context).primaryColor
+                                    ? FlutterFlowTheme.of(context).primary
                                     : FlutterFlowTheme.of(context)
                                         .secondaryText,
                                 size: 28.0,
@@ -137,7 +137,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                 child: Text(
                                   'Home',
                                   style: FlutterFlowTheme.of(context)
-                                      .subtitle2
+                                      .titleSmall
                                       .override(
                                         fontFamily: 'Outfit',
                                         color: FlutterFlowTheme.of(context)
@@ -184,19 +184,18 @@ class _MenuWidgetState extends State<MenuWidget> {
                                   width: 4.0,
                                   height: 100.0,
                                   decoration: BoxDecoration(
-                                    color:
-                                        FFAppState().currentPage == 'Projects'
-                                            ? FlutterFlowTheme.of(context)
-                                                .tertiaryColor
-                                            : FlutterFlowTheme.of(context)
-                                                .primaryBackground,
+                                    color: FFAppState().currentPage ==
+                                            'Projects'
+                                        ? FlutterFlowTheme.of(context).tertiary
+                                        : FlutterFlowTheme.of(context)
+                                            .primaryBackground,
                                   ),
                                 ),
                               ),
                               Icon(
                                 Icons.grain,
                                 color: FFAppState().currentPage == 'Projects'
-                                    ? FlutterFlowTheme.of(context).primaryColor
+                                    ? FlutterFlowTheme.of(context).primary
                                     : FlutterFlowTheme.of(context)
                                         .secondaryText,
                                 size: 28.0,
@@ -206,7 +205,8 @@ class _MenuWidgetState extends State<MenuWidget> {
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Projects',
-                                  style: FlutterFlowTheme.of(context).subtitle2,
+                                  style:
+                                      FlutterFlowTheme.of(context).titleSmall,
                                 ),
                               ),
                             ],
@@ -221,14 +221,14 @@ class _MenuWidgetState extends State<MenuWidget> {
                     child: InkWell(
                       onTap: () async {
                         setState(() {
-                          FFAppState().currentPage = 'AboutMe';
+                          FFAppState().currentPage = 'Resume';
                         });
                       },
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
                         decoration: BoxDecoration(
-                          color: FFAppState().currentPage == 'AboutMe'
+                          color: FFAppState().currentPage == 'Resume'
                               ? FlutterFlowTheme.of(context).primaryBackground
                               : FlutterFlowTheme.of(context)
                                   .secondaryBackground,
@@ -248,9 +248,8 @@ class _MenuWidgetState extends State<MenuWidget> {
                                   width: 4.0,
                                   height: 100.0,
                                   decoration: BoxDecoration(
-                                    color: FFAppState().currentPage == 'AboutMe'
-                                        ? FlutterFlowTheme.of(context)
-                                            .tertiaryColor
+                                    color: FFAppState().currentPage == 'Resume'
+                                        ? FlutterFlowTheme.of(context).tertiary
                                         : FlutterFlowTheme.of(context)
                                             .primaryBackground,
                                   ),
@@ -258,8 +257,8 @@ class _MenuWidgetState extends State<MenuWidget> {
                               ),
                               Icon(
                                 Icons.file_copy_sharp,
-                                color: FFAppState().currentPage == 'AboutMe'
-                                    ? FlutterFlowTheme.of(context).primaryColor
+                                color: FFAppState().currentPage == 'Resume'
+                                    ? FlutterFlowTheme.of(context).primary
                                     : FlutterFlowTheme.of(context)
                                         .secondaryText,
                                 size: 28.0,
@@ -270,7 +269,7 @@ class _MenuWidgetState extends State<MenuWidget> {
                                 child: Text(
                                   'My Resume',
                                   style: FlutterFlowTheme.of(context)
-                                      .subtitle2
+                                      .titleSmall
                                       .override(
                                         fontFamily: 'Outfit',
                                         color: FlutterFlowTheme.of(context)
@@ -329,12 +328,12 @@ class _MenuWidgetState extends State<MenuWidget> {
                                         Text(
                                           'Edgar Ondati',
                                           style: FlutterFlowTheme.of(context)
-                                              .subtitle1,
+                                              .titleMedium,
                                         ),
                                         Text(
                                           'X',
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText2,
+                                              .bodySmall,
                                         ),
                                         Padding(
                                           padding:
@@ -353,13 +352,13 @@ class _MenuWidgetState extends State<MenuWidget> {
                                               'View Profile',
                                               style:
                                                   FlutterFlowTheme.of(context)
-                                                      .bodyText2
+                                                      .bodySmall
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
                                                             FlutterFlowTheme.of(
                                                                     context)
-                                                                .primaryColor,
+                                                                .primary,
                                                       ),
                                             ),
                                           ),

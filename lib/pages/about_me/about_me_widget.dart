@@ -44,12 +44,12 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
 
-    return Scaffold(
-      key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-      body: GestureDetector(
-        onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
-        child: Row(
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
+      child: Scaffold(
+        key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        body: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
             wrapWithModel(
@@ -90,7 +90,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                     Text(
                                       'EDGAR ONDATI',
                                       style: FlutterFlowTheme.of(context)
-                                          .title1
+                                          .displaySmall
                                           .override(
                                             fontFamily: 'Open Sans',
                                             color: Color(0xFF131DB8),
@@ -122,7 +122,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                           '703-2725 Melfa Rd, Vancouver, V6T1N4',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText2,
+                                              .bodySmall,
                                         ),
                                         SizedBox(
                                           height: 20.0,
@@ -136,7 +136,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                         Text(
                                           '778 889 8646',
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText2,
+                                              .bodySmall,
                                         ),
                                         SizedBox(
                                           height: 20.0,
@@ -150,7 +150,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                         Text(
                                           'Edgar.Ondati@gmail.com',
                                           style: FlutterFlowTheme.of(context)
-                                              .bodyText2,
+                                              .bodySmall,
                                         ),
                                         SizedBox(
                                           height: 20.0,
@@ -224,7 +224,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'HIGHLIGHTS OF QUALIFICATIONS',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -300,20 +300,20 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'BACHELORS DEGREE IN COMPUTER SCIENCE ',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 14.0,
                                                                                     ),
                                                                               ),
                                                                               TextSpan(
                                                                                 text: 'With experience in multi- disciplinary environments including Web, UX, 3D, Interior, and Product design.',
-                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 12.0,
                                                                                     ),
                                                                               )
                                                                             ],
-                                                                            style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                            style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontSize: 14.0,
                                                                                 ),
@@ -375,21 +375,21 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'PRODUCT MANAGEMENT ',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 14.0,
                                                                                     ),
                                                                               ),
                                                                               TextSpan(
                                                                                 text: 'designing, planning, sourcing and managing project execution in different sectors including Construction, Automotive, Events, among others.',
-                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 12.0,
                                                                                     ),
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                         ),
                                                                       ),
@@ -448,21 +448,21 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                             children: [
                                                                               TextSpan(
                                                                                 text: 'PRODUCT DESIGN ',
-                                                                                style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 14.0,
                                                                                     ),
                                                                               ),
                                                                               TextSpan(
                                                                                 text: 'User Centric Design, understanding client needs and working with local and Global suppliers to deliver the best quality within their budget and requirements.',
-                                                                                style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                       fontFamily: 'Outfit',
                                                                                       fontSize: 12.0,
                                                                                     ),
                                                                               )
                                                                             ],
                                                                             style:
-                                                                                FlutterFlowTheme.of(context).bodyText1,
+                                                                                FlutterFlowTheme.of(context).bodyMedium,
                                                                           ),
                                                                         ),
                                                                       ),
@@ -517,7 +517,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'SKILLS',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -617,7 +617,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                         textAlign:
                                                                             TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               lineHeight: 0.9,
@@ -690,7 +690,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                         textAlign:
                                                                             TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               lineHeight: 0.9,
@@ -763,7 +763,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                         textAlign:
                                                                             TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               lineHeight: 0.9,
@@ -836,7 +836,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                         textAlign:
                                                                             TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               lineHeight: 0.9,
@@ -909,7 +909,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                         textAlign:
                                                                             TextAlign.center,
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .subtitle2
+                                                                            .titleSmall
                                                                             .override(
                                                                               fontFamily: 'Outfit',
                                                                               lineHeight: 0.9,
@@ -965,7 +965,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'EDUCATION',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -1024,7 +1024,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           TextSpan(
                                                                             text:
                                                                                 'BACHELORS DEGREE ',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontSize: 14.0,
                                                                                 ),
@@ -1032,7 +1032,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           TextSpan(
                                                                             text:
                                                                                 'SEPTEMBER 2009 - MAY 2013 ',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontSize: 14.0,
                                                                                   fontWeight: FontWeight.normal,
@@ -1041,14 +1041,14 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           TextSpan(
                                                                             text:
                                                                                 'University of Nairobi: BSc. Computer Science',
-                                                                            style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                            style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontSize: 12.0,
                                                                                 ),
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ],
@@ -1116,14 +1116,14 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                               children: [
                                                                                 TextSpan(
                                                                                   text: 'EXTRA-CURRICULAR COURSEWORK ',
-                                                                                  style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                  style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                         fontFamily: 'Outfit',
                                                                                         color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         fontWeight: FontWeight.normal,
                                                                                       ),
                                                                                 )
                                                                               ],
-                                                                              style: FlutterFlowTheme.of(context).bodyText1,
+                                                                              style: FlutterFlowTheme.of(context).bodyMedium,
                                                                             ),
                                                                           ),
                                                                         ),
@@ -1160,20 +1160,20 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'University of Nairobi/Stanford University Hasso Plattner institute : ',
-                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 fontSize: 14.0,
                                                                                               ),
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Introduction to Design Thinking',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 fontSize: 12.0,
                                                                                               ),
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                             fontFamily: 'Outfit',
                                                                                             fontSize: 14.0,
                                                                                           ),
@@ -1217,20 +1217,20 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Coursera/ California Institute of Arts : ',
-                                                                                          style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                          style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 fontSize: 14.0,
                                                                                               ),
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Fundamentals of Graphic design',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 fontSize: 12.0,
                                                                                               ),
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1289,7 +1289,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'RELEVANT EXPERIENCE',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -1372,13 +1372,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Founder, Product Designer & Manager',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                           ),
@@ -1400,13 +1400,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Spirit Motorcycles',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           fontWeight: FontWeight.w500,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                             SizedBox(
@@ -1422,13 +1422,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Nairobi, Kenya',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           fontWeight: FontWeight.normal,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                           ],
@@ -1451,14 +1451,14 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           TextSpan(
                                                                             text:
                                                                                 'JANUARY 2018 -  ',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontWeight: FontWeight.normal,
                                                                                 ),
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -1509,10 +1509,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Communicating with Clients to Gather and Understand their Aesthetic and Usability requirements.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1554,21 +1554,21 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Organizing Product Testing and ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Demo events ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                               ),
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'to receive product feedback.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1610,11 +1610,11 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Designing ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Product Mockups ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -1622,10 +1622,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'to Narrow down the Ideal Customer Specification.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1667,7 +1667,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Refine or Redesign',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -1675,10 +1675,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: ' product to Customer Specification.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1720,7 +1720,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Source',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -1728,10 +1728,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: ' Parts, Suppliers, and Subcontractors for each project.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1773,7 +1773,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Iterate',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -1781,10 +1781,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -1813,17 +1813,22 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                             true,
                                                                         backgroundColor:
                                                                             Colors.transparent,
+                                                                        barrierColor:
+                                                                            Color(0x00000000),
                                                                         enableDrag:
                                                                             false,
                                                                         context:
                                                                             context,
                                                                         builder:
-                                                                            (context) {
-                                                                          return Padding(
-                                                                            padding:
-                                                                                MediaQuery.of(context).viewInsets,
+                                                                            (bottomSheetContext) {
+                                                                          return GestureDetector(
+                                                                            onTap: () =>
+                                                                                FocusScope.of(context).requestFocus(_unfocusNode),
                                                                             child:
-                                                                                PortfolioView1Widget(),
+                                                                                Padding(
+                                                                              padding: MediaQuery.of(bottomSheetContext).viewInsets,
+                                                                              child: PortfolioView1Widget(),
+                                                                            ),
                                                                           );
                                                                         },
                                                                       ).then((value) =>
@@ -1859,12 +1864,12 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           .primaryBackground,
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .subtitle2
+                                                                          .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                       elevation:
                                                                           1.0,
@@ -1946,13 +1951,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Consultant Designer ',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                           ),
@@ -1974,13 +1979,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Contract',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           fontWeight: FontWeight.w500,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                             SizedBox(
@@ -1996,13 +2001,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                 children: [
                                                                                   TextSpan(
                                                                                     text: 'Nairobi, Kenya',
-                                                                                    style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                                    style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                           fontFamily: 'Outfit',
                                                                                           fontWeight: FontWeight.normal,
                                                                                         ),
                                                                                   )
                                                                                 ],
-                                                                                style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium,
                                                                               ),
                                                                             ),
                                                                           ],
@@ -2025,14 +2030,14 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           TextSpan(
                                                                             text:
                                                                                 'JULY 2013 -  ',
-                                                                            style: FlutterFlowTheme.of(context).subtitle2.override(
+                                                                            style: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                   fontFamily: 'Outfit',
                                                                                   fontWeight: FontWeight.normal,
                                                                                 ),
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
-                                                                            .bodyText1,
+                                                                            .bodyMedium,
                                                                       ),
                                                                     ),
                                                                   ),
@@ -2083,32 +2088,32 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Consulting on ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Design',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                               ),
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: ' and ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Management ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                               ),
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'of Projects across multiple sectors',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -2150,18 +2155,18 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Designing and Producing ',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: 'Websites, Infographics, Architectural Visualizations, Posters, UX, and Merchandise',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
                                                                                               ),
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -2203,7 +2208,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Source',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -2211,10 +2216,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: ' Components, Suppliers, and Subcontractors for each project.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -2256,7 +2261,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                       children: [
                                                                                         TextSpan(
                                                                                           text: 'Iterate',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2.override(
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                                 fontFamily: 'Outfit',
                                                                                                 color: Color(0xFF3C48F2),
                                                                                                 fontSize: 14.0,
@@ -2264,10 +2269,10 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                                         ),
                                                                                         TextSpan(
                                                                                           text: '  on Products to constantly improve quality and Customer Satisfaction.',
-                                                                                          style: FlutterFlowTheme.of(context).bodyText2,
+                                                                                          style: FlutterFlowTheme.of(context).bodySmall,
                                                                                         )
                                                                                       ],
-                                                                                      style: FlutterFlowTheme.of(context).bodyText1,
+                                                                                      style: FlutterFlowTheme.of(context).bodyMedium,
                                                                                     ),
                                                                                   ),
                                                                                 ],
@@ -2323,12 +2328,12 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                                           .primaryBackground,
                                                                       textStyle: FlutterFlowTheme.of(
                                                                               context)
-                                                                          .subtitle2
+                                                                          .titleSmall
                                                                           .override(
                                                                             fontFamily:
                                                                                 'Outfit',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).primaryColor,
+                                                                                FlutterFlowTheme.of(context).primary,
                                                                           ),
                                                                       elevation:
                                                                           1.0,
@@ -2393,7 +2398,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'ADDITIONAL EXPERIENCE',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 SizedBox(
@@ -2414,7 +2419,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'Goals',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                                   ),
                                                 ),
                                                 Expanded(
@@ -2439,7 +2444,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                           'Progress',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .bodyText2,
+                                                              .bodySmall,
                                                         ),
                                                       ),
                                                       Padding(
@@ -2454,7 +2459,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                           '4/10',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .bodyText2,
+                                                              .bodySmall,
                                                         ),
                                                       ),
                                                     ],
@@ -2479,7 +2484,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                       progressColor:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .primaryColor,
+                                                              .primary,
                                                       backgroundColor:
                                                           Color(0xFFE0E3E7),
                                                       barRadius:
@@ -2532,7 +2537,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'Your Week',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle1,
+                                                        .titleMedium,
                                                   ),
                                                 ),
                                                 Padding(
@@ -2543,7 +2548,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     'April 1-7th',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .bodyText2,
+                                                        .bodySmall,
                                                   ),
                                                 ),
                                                 Expanded(
@@ -2571,7 +2576,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                               BoxDecoration(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .secondaryColor,
+                                                                .secondary,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -2594,7 +2599,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                               BoxDecoration(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .secondaryColor,
+                                                                .secondary,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -2617,7 +2622,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                               BoxDecoration(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .secondaryColor,
+                                                                .secondary,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -2640,7 +2645,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                               BoxDecoration(
                                                             color: FlutterFlowTheme
                                                                     .of(context)
-                                                                .secondaryColor,
+                                                                .secondary,
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
@@ -2655,7 +2660,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                             BoxDecoration(
                                                           color: FlutterFlowTheme
                                                                   .of(context)
-                                                              .secondaryColor,
+                                                              .secondary,
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
@@ -2708,7 +2713,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                   'PROFILE',
                                                   style: FlutterFlowTheme.of(
                                                           context)
-                                                      .subtitle1
+                                                      .titleMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color: FlutterFlowTheme
@@ -2743,7 +2748,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     text: ' A passionate ',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -2772,7 +2777,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                     text: 'and ',
                                                     style: FlutterFlowTheme.of(
                                                             context)
-                                                        .subtitle2
+                                                        .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: FlutterFlowTheme
@@ -2807,7 +2812,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           fontSize: 18.0,
@@ -2853,7 +2858,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                                                 ],
                                                 style:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyText1
+                                                        .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           fontSize: 14.0,

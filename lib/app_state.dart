@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'flutter_flow/lat_lng.dart';
+import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
   static final FFAppState _instance = FFAppState._internal();
@@ -58,6 +58,12 @@ class FFAppState extends ChangeNotifier {
   bool get showmobileMenu => _showmobileMenu;
   set showmobileMenu(bool _value) {
     _showmobileMenu = _value;
+  }
+
+  String _projectitemview = 'products';
+  String get projectitemview => _projectitemview;
+  set projectitemview(String _value) {
+    _projectitemview = _value;
   }
 }
 
